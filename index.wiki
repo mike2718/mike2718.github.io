@@ -3,17 +3,18 @@
 = 欢迎来到我的个人网站 =
 
 这里保存了我的一些资料。
+  by Muir
 
 == 老游戏攻略 ==
 
 上古PC游戏攻略。
 
-- [[https://github.com/muirmok/igi2/index.html|秘密潜入2简体中文版的攻略]]
+- [[igi2/index.html|秘密潜入2简体中文版的攻略]]
 
 == 旅游攻略 ==
 
 咱老家的攻略。
 
-- [[http://nanninglvyou.net|南宁旅游攻略]]
-
-<hr />
+- [[http://nanninglvyou.net/index.html|南宁旅游攻略]]
+<hr>
+最后更新：2019-12-19 03:03:23 CST
