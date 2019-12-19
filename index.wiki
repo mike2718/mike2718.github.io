@@ -7,14 +7,15 @@
 
 == 老游戏攻略 ==
 
-上古PC游戏攻略。
+PC游戏攻略。
 
+- [[syobon-action/index|玛丽猫的攻略]]
 - [[igi2/index|秘密潜入2简体中文版的攻略]]
 
 == 旅游攻略 ==
 
 咱老家的攻略。
 
-- [[http://nanninglvyou.net/index.html|南宁旅游攻略]]
+- [[http://nanninglvyou.net/index.html|南宁旅游攻略]] [[http://nanninglvyou.net/index.html|备用链接]]
 <hr>
 最后更新：2019-12-19 03:03:23 CST
