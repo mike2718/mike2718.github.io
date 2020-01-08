@@ -6,6 +6,5 @@
 
 PC游戏攻略。
 
-- [[syobon-action/index|超级玛丽猫里奥的攻略]]
-- [[igi/index|秘密潜入的攻略]]
-- [[igi2/index|秘密潜入2的攻略]]
+- [[syobon-action/index|超级玛丽猫里奥]]
+- [[igi2/index|秘密潜入2]]
