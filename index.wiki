@@ -1,21 +1,11 @@
-﻿%title Muir Mok的个人网站
+﻿%title Muir的游戏攻略网站
 
-= 欢迎来到我的个人网站 =
+= Muir的游戏攻略网站 =
 
-这里保存了我的一些资料。
-  by Muir
-
-== 老游戏攻略 ==
+== 游戏攻略 ==
 
 PC游戏攻略。
 
 - [[syobon-action/index|超级玛丽猫里奥的攻略]]
-- [[igi2/index|秘密潜入2简体中文版的攻略]]
-
-== 旅游攻略 ==
-
-咱老家的攻略。
-
-- [[http://nanninglvyou.net/index.html|南宁旅游攻略]] [[http://nanninglvyou.net/index.html|备用链接]]
-<hr>
-最后更新：2019-12-19 03:03:23 CST
+- [[igi/index|秘密潜入的攻略]]
+- [[igi2/index|秘密潜入2的攻略]]
