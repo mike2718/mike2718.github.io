@@ -1,0 +1,53 @@
+= 梦日记游戏流程攻略
+Muir Mok <muirmok@gmail.com>
+:author: Muir Mok
+:toc:
+:imagesdir: images
+:homepage: https://muirmok.github.io/yume-nikki
+:experimental:
+:encoding: utf-8
+
+以下是所有Effect(效果)的取得法，大部分无顺序要求。以Steam版为准。
+由于目标是通关，所以不会介绍更多游戏细节。
+
+取得所有效果后，在门的房间放置所有效果的蛋，再回到现实世界的阳台，就能看到结局。
+
+== 青蛙
+
+森林世界中拿到Frog(青蛙)的效果。
+
+image::frog.png["青蛙的效果", width=408, link="images/frog.png"]
+
+== 防寒服
+
+方块世界中拿到Hat & Scarf(防寒服)的效果。
+
+image::hat-and-scarf.png["防寒服的效果", width=408, link="images/hat-and-scarf.png"]
+
+== 雨伞
+
+积水世界中拿到Umbrella(雨伞)的效果。
+
+image::umbrella.png["雨伞的效果", width=408, link="images/umbrella.png"]
+
+== 信号灯
+
+在积水世界中进入此处。
+
+image::jinrusenlinzhongdedaolu.png["进入森林中的道路", width=408, link="images/jinrusenlinzhongdedaolu.png"]
+
+来到一个黑色背景的公路，往右走，有五个Y字型的怪脸，途径15张怪脸以后，往左走，遇到最后一个绿色的怪脸，过版进入树海C。
+
+在树海C的公路上调查绿人尸体，拿到信号灯。
+
+image::traffic-light.png["信号灯", width=408, link="images/traffic-light.png"]
+
+== 路灯
+
+黑暗世界
+
+== 雪女
+
+在雪世界拿到Snow Woman(雪女)的效果。
+
+image::snow-woman.png["雪女", width=408, link="images/snow-woman.png"]
