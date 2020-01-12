@@ -8,3 +8,4 @@ PC游戏攻略。
 
 - [[syobon-action/index|猫里奥]]
 - [[igi2/index|秘密潜入2]]
+- [[yume-nikki/index|梦日记]] 

@@ -1,13 +1,12 @@
-= 梦日记游戏流程攻略
+= 梦日记游戏攻略
 Muir Mok <muirmok@gmail.com>
 :author: Muir Mok
 :toc:
 :imagesdir: images
 :homepage: https://muirmok.github.io/yume-nikki
-:experimental:
 :encoding: utf-8
 
-以下是所有Effect(效果)的取得法，大部分无顺序要求。以Steam版为准。
+以下是所有Effect(效果)的取得法，本攻略以Steam版为准。
 由于目标是通关，所以不会介绍更多游戏细节。
 
 取得所有效果后，在门的房间放置所有效果的蛋，再回到现实世界的阳台，就能看到结局。
@@ -36,9 +35,9 @@ image::umbrella.png["雨伞的效果", width=408, link="images/umbrella.png"]
 
 image::jinrusenlinzhongdedaolu.png["进入森林中的道路", width=408, link="images/jinrusenlinzhongdedaolu.png"]
 
-来到一个黑色背景的公路，往右走，有五个Y字型的怪脸，途径15张怪脸以后，往左走，遇到最后一个绿色的怪脸，过版进入树海C。
+来到一个黑色背景的公路，往右走，有五个Y字型的怪脸，经过15张怪脸以后，往左走，遇到最后一个绿色的怪脸，过版进入树海C。
 
-在树海C的公路上调查绿人尸体，拿到信号灯。
+在树海C的公路上调查绿人尸体，拿到Traffic Light(信号灯)。
 
 image::traffic-light.png["信号灯", width=408, link="images/traffic-light.png"]
 
@@ -51,3 +50,71 @@ image::traffic-light.png["信号灯", width=408, link="images/traffic-light.png"
 在雪世界拿到Snow Woman(雪女)的效果。
 
 image::snow-woman.png["雪女", width=408, link="images/snow-woman.png"]
+
+== 没有脸
+
+image::faceless-ghost.png["没有脸", width=408, link="images/faceless-ghost.png"]
+
+== 自行车
+
+在涂鸦世界中拿到Bicycle(自行车)的效果。
+
+image::bicycle.png["自行车", width=408, link="images/bicycle.png"]
+
+== 笛子
+
+在涂鸦世界中进入此处入口。
+
+image::flute1.png["进入公寓", width=408, link="images/flute1.png"]
+
+来到公寓后，进入此处。
+
+image::flute2.png["进入入口", width=408, link="images/flute2.png"]
+
+向左走两个版面，拿到Flute(笛子)的效果。
+
+image::flute.png["笛子", width=408, link="images/flute.png"]
+
+== 鬼手
+
+在眼珠世界拿到Eye Palm(鬼手)的效果。
+
+image::eye-palm.png["鬼手", width=408, link="images/eye-palm.png"]
+
+== 小人
+
+在蜡烛世界中追赶移动的Midget(小人)，拿到效果。
+
+自行车效果可以勉强超过快速移动的小人。
+信号灯效果可以使小人停下。
+默认状态下主角可以使小人停下。当主角挡在小人正右方一格的时候，小人停止移动。
+
+image::midget.png["小人", width=408, link="images/midget.png"]
+
+== 猫
+
+在盾民族世界追赶Cat(猫)，拿到效果。
+自行车和信号灯效果对猫也有效。
+
+image::cat.png["猫", width=408, link="images/cat.png"]
+
+== 鬼
+
+在盾民族世界进入此处入口。
+
+image::fc.png["前往FC小屋", width=408, link="images/fc.png"]
+
+从梯子爬上来后，进入FC小屋内部。
+
+在小屋内迷宫找到Oni(鬼)的效果。
+
+image::oni.png["鬼", width=408, link="images/oni.png"]
+
+== 霓虹灯
+
+
+== 脑袋
+
+== 路灯
+
+
