@@ -2,3 +2,4 @@
 Allow: /
 
 Sitemap: http://muirmok.cn/sitemap.xml
+

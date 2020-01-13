@@ -1,6 +1,5 @@
-﻿all:	
-	vim -c ":VimwikiAll2HTML" -c ":q!" index.wiki
+﻿all:	gitadd
 gitadd:
-	git add *.wiki *.html makefile sitemap.xml
+	git add *.html makefile sitemap.xml
 gitpush:
 	git push -u origin master

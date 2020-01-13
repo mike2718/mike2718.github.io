@@ -5,29 +5,84 @@ Muir Mok <muirmok@gmail.com>
 :imagesdir: images
 :homepage: https://muirmok.github.io/yume-nikki
 :encoding: utf-8
+:sectlinks:
 
-以下是所有Effect(效果)的取得法，本攻略以Steam版为准。
+以下是所有Effect(效果)的取得法，本攻略以Steam 0.10a版本为准。
 由于目标是通关，所以不会介绍更多游戏细节。
 
-取得所有效果后，在门的房间放置所有效果的蛋，再回到现实世界的阳台，就能看到结局。
+通关办法：在取得所有效果后(菜单栏显示 *E 25* )，在门的房间放置所有效果的蛋(24个蛋)，再回到现实世界的阳台。
 
 == 青蛙
 
-森林世界中拿到Frog(青蛙)的效果。
+森林世界中找到Frog(青蛙)的效果。
 
-image::frog.png["青蛙的效果", width=408, link="images/frog.png"]
+image::frog.png["青蛙", width=408, link="images/frog.png"]
 
 == 防寒服
 
-方块世界中拿到Hat & Scarf(防寒服)的效果。
+方块世界中找到Hat & Scarf(防寒服)的效果。
 
-image::hat-and-scarf.png["防寒服的效果", width=408, link="images/hat-and-scarf.png"]
+image::hat-and-scarf.png["防寒服", width=408, link="images/hat-and-scarf.png"]
+
+另外，调查本世界中的白色床有几率传送到link:#_大便[地下世界]。
 
 == 雨伞
 
-积水世界中拿到Umbrella(雨伞)的效果。
+积水世界中找到Umbrella(雨伞)的效果。
 
-image::umbrella.png["雨伞的效果", width=408, link="images/umbrella.png"]
+image::umbrella.png["雨伞", width=408, link="images/umbrella.png"]
+
+== 菜刀
+
+推荐先取得link:#_路灯[路灯]。
+
+在黑暗世界中，使用Lamp(路灯)效果，地面会出现图腾。找到Kitchen Knife(菜刀)效果。
+
+image::kitchen-knife.png["菜刀", width=408, link="images/kitchen-knife.png"]
+
+== 地毯
+
+推荐先取得link:#_路灯[路灯]。
+
+在黑暗世界中进入此处。
+
+image::heian.png["黑暗世界中进入此处", width=408, link="images/heian.png"]
+
+在荒野中找到Towel(地毯)。
+
+image::towel.png["地毯", width=408, link="images/towel.png"]
+
+== 头巾
+
+在荒野中从下向上穿过此处，进入空中庭园区域。继续向深处前进。
+
+image::huangye.png["从下向上穿过此处", width=408, link="images/huangye.png"]
+
+在夜晚观景台的地方进入建筑物，向右一直走，调查最深处的白色的花。画面会闪，并出现音效。此时向左返回入口，进入混凝土废墟。
+
+找到Spirit Headband(头巾)效果。
+
+image::spirit-headband.png["头巾", width=408, link="images/spirit-headband.png"]
+
+== 软绵绵
+
+在荒野中进入此处村落。
+
+image::cunluo.png["进入村落", width=408, link="images/cunluo.png"]
+
+村落里有很多长的像木板的NPC，其中 *只有一个* NPC会把主角传送到FC地图(多试几次)。
+
+在FC地图中继续前进，进入此处入口。
+
+image::fc1.png["进入入口", width=408, link="images/fc1.png"]
+
+此处利用Cat(猫)的效果，把褐色的NPC勾引出来，再进入楼梯。
+
+image::fc2.png["勾引出NPC", width=408, link="images/fc2.png"]
+
+拿到Squish-Squish(软绵绵)的效果。
+
+image::squish-squish.png["软绵绵", width=408, link="images/squish-squish.png"]
 
 == 信号灯
 
@@ -41,23 +96,37 @@ image::jinrusenlinzhongdedaolu.png["进入森林中的道路", width=408, link="
 
 image::traffic-light.png["信号灯", width=408, link="images/traffic-light.png"]
 
-== 路灯
-
-黑暗世界
-
 == 雪女
 
-在雪世界拿到Snow Woman(雪女)的效果。
+在雪世界找到Snow Woman(雪女)的效果。
 
 image::snow-woman.png["雪女", width=408, link="images/snow-woman.png"]
 
+另外，调查本世界中的白色床有几率传送到link:#_大便[地下世界]。
+
+== 长发
+
+在壁画的世界找到Long Hair(长发)的效果。
+
+image::long-hair.png["长发", width=408, link="images/long-hair.png"]
+
+== 金发
+
+怪物和link:#_长发[长发]的怪物长得一样，在壁画的世界找到Blonde(金发)的效果。
+
 == 没有脸
+
+在壁画世界进入此处，来到下水道。
+
+image::bihua.png["前往下水道", width=408, link="images/bihua.png"]
+
+向左过三个版面，拿到Faceless Ghost(没有脸)。
 
 image::faceless-ghost.png["没有脸", width=408, link="images/faceless-ghost.png"]
 
 == 自行车
 
-在涂鸦世界中拿到Bicycle(自行车)的效果。
+在涂鸦世界中找到Bicycle(自行车)的效果。
 
 image::bicycle.png["自行车", width=408, link="images/bicycle.png"]
 
@@ -77,7 +146,7 @@ image::flute.png["笛子", width=408, link="images/flute.png"]
 
 == 鬼手
 
-在眼珠世界拿到Eye Palm(鬼手)的效果。
+在眼珠世界找到Eye Palm(鬼手)的效果。
 
 image::eye-palm.png["鬼手", width=408, link="images/eye-palm.png"]
 
@@ -87,9 +156,11 @@ image::eye-palm.png["鬼手", width=408, link="images/eye-palm.png"]
 
 自行车效果可以勉强超过快速移动的小人。
 信号灯效果可以使小人停下。
-默认状态下主角可以使小人停下。当主角挡在小人正右方一格的时候，小人停止移动。
+默认状态下主角可以守株待兔，使小人停下。当主角挡在小人正右方一格的时候，小人停止移动。
 
 image::midget.png["小人", width=408, link="images/midget.png"]
+
+另外，调查本世界中的白色床有几率传送到link:#_大便[地下世界]。
 
 == 猫
 
@@ -112,9 +183,85 @@ image::oni.png["鬼", width=408, link="images/oni.png"]
 
 == 霓虹灯
 
+在霓虹灯世界中找到Neon(霓虹灯)的效果。
+
+image::neon.png["霓虹灯", width=408, link="images/neon.png"]
+
+== 变胖
+
+从霓虹灯世界的此处入口进入地狱通道。
+
+image::nihongdeng1.png["进入地狱", width=408, link="images/nihongdeng1.png"]
+
+一路走到底，调查2个红色的立方体，进入地狱。
+找到此处入口，进入湖回廊。
+
+image::diyu1.png["进入湖回廊", width=408, link="images/diyu1.png"]
+
+在湖回廊中调查并得到Fatten(变胖)的效果。
+
+image::fatten.png["变胖", width=408, link="images/fatten.png"]
+
+== 魔女
+
+在地狱中找到此处入口，进入树海。
+
+image::diyu2.png["进入树海", width=408, link="images/diyu2.png"]
+
+进入树海，一路深入，上电车。
+
+在电车的座位上坐下，10秒后起身出车门，向左走，来到树海沼泽。
+
+一路深入，拿到Witch(魔女)的效果。
+
+image::witch.png["魔女", width=408, link="images/witch.png"]
 
 == 脑袋
 
+在数字的世界进入此处入口。
+
+image::shuzi.png["数字的世界1", width=408, link="images/shuzi.png"]
+
+来到一个有很多白色床的地方，进入此处入口。
+
+image::shuzi2.png["数字的世界2", width=408, link="images/shuzi2.png"]
+
+另外，调查此处的其中一个床有几率传送到link:#_大便[地下世界]。
+
+在拿脑袋的世界调查断头台，拿到Severed Head(脑袋)。
+
+image::severed-head.png["脑袋", width=408, link="images/severed-head.png"]
+
 == 路灯
 
+在数字的世界进入此处入口。
 
+image::ludeng.png["进入入口", width=408, link="images/ludeng.png"]
+
+来到路灯世界，找到Lamp(路灯)的效果。
+
+image::lamp.png["路灯", width=408, link="images/lamp.png"]
+
+== 大便
+
+通过梦境世界主角房间的床、link:#_防寒服[方块世界的床]、link:#_雪女[雪世界的床]、link:#_小人[蜡烛世界的床]和link:#_脑袋[数字世界的床]五个床中的其中一个传送到地下世界。
+
+方块世界中的白色床↓
+
+image::chuang-fangkuai.png["方块世界中的白色床", width=408, link="images/chuang-fangkuai.png"]
+
+雪世界中的白色床↓
+
+image::chuang-xue.png["雪世界中的白色床", width=408, link="images/xue.png"]
+
+蜡烛世界中的白色床↓
+
+image::chuang-lazhu.png["蜡烛世界中的白色床", width=408, link="images/chuang-lazhu.png"]
+
+数字世界中的白色床↓
+
+image::chuang-shuzi.png["数字世界中的白色床", width=408, link="images/chuang-shuzi.png"]
+
+进入地下世界后，一路深入，在有喷射火焰的楼梯前使用link:#_雪女[雪女效果]或link:#_雨伞[雨伞效果]，继续前进。
+
+拿到Poo Hair(大便)的效果。
