@@ -3,14 +3,14 @@ Muir Mok <muirmok@gmail.com>
 :author: Muir Mok
 :toc:
 :imagesdir: images
-:homepage: https://muirmok.github.io/yume-nikki
+:homepage: http://muirmok.cn/yume-nikki
 :encoding: utf-8
 :sectlinks:
 
-以下是所有Effect(效果)的取得法，本攻略以Steam 0.10a版本为准。
+以下是所有Effect(效果)的取得法，本攻略以https://store.steampowered.com/app/650700/Yume_Nikki/[Steam 0.10a]英文版为准。
 由于目标是通关，所以不会介绍更多游戏细节。
 
-通关办法：在取得所有效果后(菜单栏显示 *E 25* )，在门的房间放置所有效果的蛋(24个蛋)，再回到现实世界的阳台。
+*通关方法* ：在取得所有效果后(菜单栏显示 *E 25* )，在门的房间放置24个效果的蛋(从菜单选择效果后，按5)，再回到现实世界的阳台。
 
 == 青蛙
 
@@ -34,21 +34,21 @@ image::umbrella.png["雨伞", width=408, link="images/umbrella.png"]
 
 == 菜刀
 
-推荐先取得link:#_路灯[路灯]。
+推荐先取得link:#_路灯[路灯效果]。
 
-在黑暗世界中，使用Lamp(路灯)效果，地面会出现图腾。找到Kitchen Knife(菜刀)效果。
+在黑暗世界中，使用路灯效果，地面会出现图腾。找到Kitchen Knife(菜刀)效果。
 
 image::kitchen-knife.png["菜刀", width=408, link="images/kitchen-knife.png"]
 
 == 地毯
 
-推荐先取得link:#_路灯[路灯]。
+推荐先取得link:#_路灯[路灯效果]。
 
 在黑暗世界中进入此处。
 
 image::heian.png["黑暗世界中进入此处", width=408, link="images/heian.png"]
 
-在荒野中找到Towel(地毯)。
+在荒野中找到Towel(地毯)效果。
 
 image::towel.png["地毯", width=408, link="images/towel.png"]
 
@@ -76,7 +76,7 @@ image::cunluo.png["进入村落", width=408, link="images/cunluo.png"]
 
 image::fc1.png["进入入口", width=408, link="images/fc1.png"]
 
-此处利用Cat(猫)的效果，把褐色的NPC勾引出来，再进入楼梯。
+此处利用link:#_猫[猫的效果]，把褐色的NPC勾引出来，再进入楼梯。
 
 image::fc2.png["勾引出NPC", width=408, link="images/fc2.png"]
 
@@ -112,7 +112,7 @@ image::long-hair.png["长发", width=408, link="images/long-hair.png"]
 
 == 金发
 
-怪物和link:#_长发[长发]的怪物长得一样，在壁画的世界找到Blonde(金发)的效果。
+持有效果的怪物和link:#_长发[长发]的怪物长得一样，在壁画的世界找到Blonde(金发)的效果。
 
 == 没有脸
 
@@ -120,7 +120,7 @@ image::long-hair.png["长发", width=408, link="images/long-hair.png"]
 
 image::bihua.png["前往下水道", width=408, link="images/bihua.png"]
 
-向左过三个版面，拿到Faceless Ghost(没有脸)。
+向左过三个版面，拿到Faceless Ghost(没有脸)的效果。
 
 image::faceless-ghost.png["没有脸", width=408, link="images/faceless-ghost.png"]
 
@@ -154,18 +154,18 @@ image::eye-palm.png["鬼手", width=408, link="images/eye-palm.png"]
 
 在蜡烛世界中追赶移动的Midget(小人)，拿到效果。
 
-自行车效果可以勉强超过快速移动的小人。
-信号灯效果可以使小人停下。
-默认状态下主角可以守株待兔，使小人停下。当主角挡在小人正右方一格的时候，小人停止移动。
+link:#_自行车[自行车效果]可以勉强超过快速移动的小人。
+link:#_信号灯[信号灯效果]可以使小人停下。
+另外可以守株待兔，使小人停下。当主角挡在小人正右方一格的时候，小人停止移动。
 
 image::midget.png["小人", width=408, link="images/midget.png"]
 
-另外，调查本世界中的白色床有几率传送到link:#_大便[地下世界]。
+另外，调查方块世界中的白色床有几率传送到link:#_大便[地下世界]。
 
 == 猫
 
 在盾民族世界追赶Cat(猫)，拿到效果。
-自行车和信号灯效果对猫也有效。
+link:_#自行车[自行车效果]和link:_#信号灯[信号灯效果]也可用。
 
 image::cat.png["猫", width=408, link="images/cat.png"]
 
@@ -228,9 +228,11 @@ image::shuzi2.png["数字的世界2", width=408, link="images/shuzi2.png"]
 
 另外，调查此处的其中一个床有几率传送到link:#_大便[地下世界]。
 
-在拿脑袋的世界调查断头台，拿到Severed Head(脑袋)。
+在拿脑袋的世界调查断头台，有一定几率拿到Severed Head(脑袋)。
 
 image::severed-head.png["脑袋", width=408, link="images/severed-head.png"]
+
+如果被尖嘴NPC抓到会传送到封闭地图，只能重来。
 
 == 路灯
 
@@ -244,7 +246,7 @@ image::lamp.png["路灯", width=408, link="images/lamp.png"]
 
 == 大便
 
-通过梦境世界主角房间的床、link:#_防寒服[方块世界的床]、link:#_雪女[雪世界的床]、link:#_小人[蜡烛世界的床]和link:#_脑袋[数字世界的床]五个床中的其中一个传送到地下世界。
+通过梦境世界主角房间的床、link:#_防寒服[方块世界的床]、link:#_雪女[雪世界的床]、link:#_小人[蜡烛世界的床]和link:#_脑袋[数字世界的床]五个床中的其中一个传送到地下世界。(一定几率)
 
 方块世界中的白色床↓
 
@@ -265,3 +267,5 @@ image::chuang-shuzi.png["数字世界中的白色床", width=408, link="images/c
 进入地下世界后，一路深入，在有喷射火焰的楼梯前使用link:#_雪女[雪女效果]或link:#_雨伞[雨伞效果]，继续前进。
 
 拿到Poo Hair(大便)的效果。
+
+image::poo-hair.png["大便", width=408, link="images/poo-hair.png"]
