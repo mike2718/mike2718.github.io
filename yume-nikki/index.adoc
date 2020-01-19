@@ -226,7 +226,7 @@ image::shuzi2.png["数字的世界2", width=408, link="images/shuzi2.png"]
 
 另外，调查此处的其中一个床有几率传送到<<_大便,地下世界>>。
 
-在拿脑袋的世界调查断头台，有一定几率拿到Severed Head(脑袋)。
+在拿脑袋的世界调查断头台，有一定几率拿到Severed Head(脑袋)的效果。
 
 image::severed-head.png["脑袋", width=408, link="images/severed-head.png"]
 
