@@ -7,10 +7,9 @@ Muir Mok <muirmok@gmail.com>
 :experimental:
 
 本攻略以https://store.steampowered.com/app/923910/Eve_of_Souls_Static_Pod/[Steam V0.65.5]版为准。
-由于目标是通关，所以不会介绍对通关影响不大的游戏细节。
-与剧情特别有关的地方请用鼠标选择就能看到。
+与剧情有关的地方请用鼠标选择空白的地方就能看到。
 
-== 操作说明
+== 操作方法
 
 |===
 |按键|效果
