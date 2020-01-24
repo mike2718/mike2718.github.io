@@ -1,0 +1,50 @@
+= X的天使(Angels of Death)游戏攻略
+Muir Mok <muirmok@gmail.com>
+:author: Muir Mok
+:toc:
+:toc-title: 目录
+:imagesdir: images
+:encoding: utf-8
+
+本攻略以https://store.steampowered.com/app/537110/Angels_of_Death/[Steam版]为准。
+与剧情有关的地方请用鼠标选择空白的地方就能看到。
+
+== 操作说明
+
+[options="header"]
+|===
+|按键|效果
+
+|*↑↓←→*, *2、4、6、8* （数字键盘）
+|移动
+
+|*Shift*
+|快跑
+
+|*Z*, *Enter*, *Space*
+|确定、对话、调查
+
+|*X*, *Esc*, *0* （数字键盘）
+|取消、显示菜单
+
+|*Alt+Enter*
+|切换窗口/全屏模式
+
+|*Alt+F4*
+|强制退出
+
+|*F12*
+|回主菜单
+
+|*F1*
+|游戏设置
+|===
+
+== Episode 1
+
+== Episode 2
+
+== Episode 3
+
+== Episode 4
+

@@ -2,9 +2,9 @@
 Muir Mok <muirmok@gmail.com>
 :author: Muir Mok
 :toc:
+:toc-title: 目录
 :imagesdir: images
 :encoding: utf-8
-:experimental:
 
 本攻略以https://store.steampowered.com/app/923910/Eve_of_Souls_Static_Pod/[Steam V0.65.5]版为准。
 与剧情有关的地方请用鼠标选择空白的地方就能看到。

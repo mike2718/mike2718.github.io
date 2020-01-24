@@ -2,10 +2,9 @@
 Muir Mok <muirmok@gmail.com>
 :author: Muir Mok
 :toc:
+:toc-title: 目录
 :imagesdir: images
-:homepage: http://muirmok.cn/ib
 :encoding: utf-8
-:sectlinks:
 
 使用版本是Steam版ver1.07版。
 

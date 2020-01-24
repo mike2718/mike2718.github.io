@@ -2,6 +2,7 @@
 Muir Mok <muirmok@gmail.com>
 :author: Muir Mok
 :toc:
+:toc-title: 目录
 :imagesdir: images
 :encoding: utf-8
 
