@@ -1,12 +1,12 @@
 = 杀戮的天使游戏攻略
 Muir Mok <muirmok@gmail.com>
 :author: Muir Mok
-:toc:
-:toc-title: 目录
+:lang: zh-CN
 :imagesdir: images
 :encoding: utf-8
 
-本攻略以https://store.steampowered.com/app/537110/Angels_of_Death/[Steam版]为准。
+本攻略以 https://store.steampowered.com/app/537110/Angels_of_Death/[Steam版]为准。
+
 与剧情有关的地方请用鼠标选择空白的地方就能看到。
 
 == 操作说明

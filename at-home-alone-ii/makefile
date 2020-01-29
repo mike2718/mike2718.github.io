@@ -1,11 +1,13 @@
 ADOC = ~/bin/asciidoc
 AFLAGS = -b html5 -a max-width=55em -a toc2 -a theme=flask
 
-all:
+all:	tidy adoc
+
+adoc:
 	$(ADOC) $(AFLAGS) index.adoc
-tidy:
-	tidy -utf8 -m index.html
+tidy:	adoc
+	tidy -utf8 -m -q index.html
 gitadd:
-	git add *.adoc *.html makefile README.md
+	git add *.adoc *.html makefile
 gitpush:
 	git push -u origin master

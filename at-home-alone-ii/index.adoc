@@ -1,14 +1,14 @@
 = 一个人在家时II游戏攻略
 Muir Mok <muirmok@gmail.com>
 :author: Muir Mok
-:toc:
-:toc-title: 目录
 :imagesdir: images
 :encoding: utf-8
+:lang: zh-CN
 
 image::title.png["一个人在家时II游戏标题画面", width=336, link="https://store.steampowered.com/app/1120360/At_Home_Alone_II/"]
 
-本攻略以https://store.steampowered.com/app/1120360/At_Home_Alone_II/[Steam版]为准。
+本攻略以 https://store.steampowered.com/app/1120360/At_Home_Alone_II/[Steam版]为准。
+
 与剧情有关的部分用鼠标选择反白就能看到。
 
 == 操作说明
