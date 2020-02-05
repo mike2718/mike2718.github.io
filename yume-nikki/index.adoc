@@ -1,14 +1,13 @@
 = 梦日记游戏攻略
 Muir Mok <muirmok@gmail.com>
 :author: Muir Mok
-:toc:
-:toc-title: 目录
 :imagesdir: images
 :encoding: utf-8
+:lang: zh-CN
 
-*通关方法* ：在取得所有效果后(菜单栏显示 *E 25* )，在门的房间放置24个效果的蛋(从菜单选择效果后，按5)，再回到现实世界的阳台。
+**通关方法**：在取得所有效果后(菜单栏显示**E 25**)，在门的房间放置24个效果的蛋(从菜单选择效果后，按5)，再回到现实世界的阳台。
 
-以下是所有Effect(效果)的取得法，本攻略以https://store.steampowered.com/app/650700/Yume_Nikki/[Steam 0.10a]英文版为准。
+以下是所有Effect(效果)的取得法，本攻略以 https://store.steampowered.com/app/650700/Yume_Nikki/[Steam 0.10a 英文版]为准。
 由于目标是通关，所以不会介绍更多游戏细节。
 
 == 青蛙
@@ -264,6 +263,6 @@ image::chuang-shuzi.png["数字世界中的白色床", width=408, link="images/c
 
 进入地下世界后，一路深入，在有喷射火焰的楼梯前使用<<_雪女,雪女效果>>或<<_雨伞,雨伞效果>>，继续前进。
 
-拿到Poo Hair(大便)的效果。
+调查并拿到Poo Hair(大便)的效果。
 
 image::poo-hair.png["大便", width=408, link="images/poo-hair.png"]
