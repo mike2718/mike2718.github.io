@@ -1,6 +1,9 @@
 ﻿all:	gitadd
-date:
+
+date:	touch
 	date --iso-8601=seconds -u -r sitemap.xml
+touch:
+	touch sitemap.xml
 xml:
 	xmllint --noout sitemap.xml
 tidy:

@@ -5,7 +5,7 @@
 "HTML Tidy for HTML5 for Linux version 5.7.28">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="generator" content="AsciiDoc 9.0.0rc1">
-<title>Misao游戏攻略</title>
+<title>Wren语言程序设计</title>
 
 <style type="text/css">
 /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
@@ -89,9 +89,15 @@ ul, ol, li > p {
 ul > li     { color: #aaa; }
 ul > li > * { color: black; }
 
-pre {
+.monospaced, code, pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  color: navy;
   padding: 0;
   margin: 0;
+}
+pre {
+  white-space: pre-wrap;
 }
 
 #author {
@@ -181,7 +187,7 @@ div.quoteblock, div.verseblock {
   margin-left: 1.0em;
   margin-right: 10%;
   border-left: 5px solid #f0f0f0;
-  color: #777777;
+  color: #888;
 }
 
 div.quoteblock > div.attribution {
@@ -221,7 +227,7 @@ div.exampleblock > div.content {
 }
 
 div.imageblock div.content { padding-left: 0; }
-span.image img { border-style: none; }
+span.image img { border-style: none; vertical-align: text-bottom; }
 a.image:visited { color: white; }
 
 dl {
@@ -351,7 +357,7 @@ div.colist td img {
   margin-bottom: 0.1em;
 }
 
-div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+div.toclevel0, div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -409,17 +415,13 @@ span.underline { text-decoration: underline; }
 span.overline { text-decoration: overline; }
 span.line-through { text-decoration: line-through; }
 
+div.unbreakable { page-break-inside: avoid; }
+
 
 /*
  * xhtml11 specific
  *
  * */
-
-tt {
-  font-family: monospace;
-  font-size: inherit;
-  color: navy;
-}
 
 div.tableblock {
   margin-top: 1.0em;
@@ -453,12 +455,6 @@ div.tableblock > table[frame="vsides"] {
  * html5 specific
  *
  * */
-
-.monospaced {
-  font-family: monospace;
-  font-size: inherit;
-  color: navy;
-}
 
 table.tableblock {
   margin-top: 1.0em;
@@ -539,72 +535,6 @@ body.manpage div.sectionbody {
 @media print {
   body.manpage div#toc { display: none; }
 }
-
-
-/*
- * Theme specific overrides of the preceding (asciidoc.css) CSS.
- *
- */
-body {
-  font-family: Garamond, Georgia, serif;
-  font-size: 17px;
-  color: #3E4349;
-  line-height: 1.3em;
-}
-h1, h2, h3, h4, h5, h6,
-div.title, caption.title,
-thead, p.table.header,
-#toctitle,
-#author, #revnumber, #revdate, #revremark,
-#footer {
-  font-family: Garmond, Georgia, serif;
-  font-weight: normal;
-  border-bottom-width: 0;
-  color: #3E4349;
-}
-div.title, caption.title { color: #596673; font-weight: bold; }
-h1 { font-size: 240%; }
-h2 { font-size: 180%; }
-h3 { font-size: 150%; }
-h4 { font-size: 130%; }
-h5 { font-size: 115%; }
-h6 { font-size: 100%; }
-#header h1 { margin-top: 0; }
-#toc {
-  color: #444444;
-  line-height: 1.5;
-  padding-top: 1.5em;
-}
-#toctitle {
-  font-size: 20px;
-}
-#toc a {
-    border-bottom: 1px dotted #999999;
-    color: #444444 !important;
-    text-decoration: none !important;
-}
-#toc a:hover {
-    border-bottom: 1px solid #6D4100;
-    color: #6D4100 !important;
-    text-decoration: none !important;
-}
-div.toclevel1 { margin-top: 0.2em; font-size: 16px; }
-div.toclevel2 { margin-top: 0.15em; font-size: 14px; }
-em, dt, td.hdlist1 { color: black; }
-strong { color: #3E4349; }
-a { color: #004B6B; text-decoration: none; border-bottom: 1px dotted #004B6B; }
-a:visited { color: #615FA0; border-bottom: 1px dotted #615FA0; }
-a:hover { color: #6D4100; border-bottom: 1px solid #6D4100; }
-div.tableblock > table, table.tableblock { border: 3px solid #E8E8E8; }
-th.tableblock, td.tableblock { border: 1px solid #E8E8E8; }
-ul > li > * { color: #3E4349; }
-pre, tt, .monospaced { font-family: Consolas,Menlo,'Deja Vu Sans Mono','Bitstream Vera Sans Mono',monospace; }
-tt, .monospaced { font-size: 0.9em; color: black;
-}
-div.exampleblock > div.content, div.sidebarblock > div.content, div.listingblock > div.content { border-width: 0 0 0 3px; border-color: #E8E8E8; }
-div.verseblock { border-left-width: 0; margin-left: 3em; }
-div.quoteblock { border-left-width: 3px; margin-left: 0; margin-right: 0;}
-div.admonitionblock td.content { border-left: 3px solid #E8E8E8; }
 
 
 @media screen {
@@ -838,9 +768,9 @@ asciidoc.install(2);
 /*]]>*/
 </script>
 </head>
-<body class="article" style="max-width:55em">
+<body class="article" style="max-width:50em">
 <div id="header">
-<h1>Misao游戏攻略</h1>
+<h1>Wren语言程序设计</h1>
 <span id="author">Muir Mok</span><br>
 <span id="email" class="monospaced">&lt;<a href=
 "mailto:muirmok@gmail.com">muirmok@gmail.com</a>&gt;</span><br>
@@ -852,107 +782,150 @@ table of contents.</b></p>
 </noscript></div>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sect1">
+<h2 id="_编译和安装wren">编译和安装wren</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>本攻略以 <a href=
-"https://store.steampowered.com/app/691450/Misao_Definitive_Edition/">
-Steam版</a>为准。</p>
+<p>wren的源代码目前托管在github上，可以很容易的被标准的*nix编译工具链编译。</p>
 </div>
 <div class="paragraph">
-<p>与剧情有关的地方请用鼠标选择空白的地方就能看到。</p>
+<p>如果是*nix系统，已经安装了git、make和gcc等工具，编译wren只需要执行以下命令</p>
+</div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>$ git clone https://github.com/wren-lang/wren.git
+$ cd wren
+$ make</pre></div>
+</div>
+<div class="paragraph">
+<p>编译成功后可以将wren二进制文件拷贝到系统目录。</p>
+</div>
+<div class="paragraph">
+<p>执行</p>
+</div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>cp wren /usr/local/bin</pre></div>
+</div>
+<div class="paragraph">
+<p>或执行</p>
+</div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>mkdir ~/bin
+cp wren ~/bin</pre></div>
+</div>
+<div class="paragraph">
+<p>执行wren时加上 <span class="monospaced">--version</span>
+选项将显示wren的版本号，本书所使用的wren版本为</p>
+</div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>$ wren --version
+wren 0.2.0</pre></div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_操作说明">操作说明</h2>
+<h2 id="_执行第一个脚本">执行第一个脚本</h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width:100%;">
-<col style="width:50%;">
-<col style="width:50%;">
-<thead>
+<div class="sect2">
+<h3 id="_执行脚本">执行脚本</h3>
+<div class="paragraph">
+<p>将以下内容保存为 <span class="monospaced">hello.wren</span> 。</p>
+</div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>// 第一个脚本
+System.print("Hello World")</pre></div>
+</div>
+<div class="paragraph">
+<p>执行</p>
+</div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>$ wren hello.wren
+Hello World</pre></div>
+</div>
+<div class="admonitionblock">
+<table>
 <tr>
-<th class="tableblock halign-left valign-top">按键</th>
-<th class="tableblock halign-left valign-top">效果</th>
+<td class="icon">
+<div class="title">提示</div>
+</td>
+<td class="content">不像C语言那样，字符串最后最后不需要 <span class=
+"monospaced">\n</span> ，行末尾也不需要 <span class=
+"monospaced">;</span></td>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top">
-<p class="tableblock"><strong>↑ ↓ → ←</strong></p>
-</td>
-<td class="tableblock halign-left valign-top">
-<p class="tableblock">进行角色移动、指令选择</p>
-</td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top">
-<p class="tableblock"><strong>Z、Enter、空格键</strong></p>
-</td>
-<td class="tableblock halign-left valign-top">
-<p class="tableblock">查看文章、调查物品、确定选择</p>
-</td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top">
-<p class="tableblock"><strong>X、Backspace</strong></p>
-</td>
-<td class="tableblock halign-left valign-top">
-<p class="tableblock">取消、打开菜单、文章快进</p>
-</td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top">
-<p class="tableblock"><strong>C、Shift</strong></p>
-</td>
-<td class="tableblock halign-left valign-top">
-<p class="tableblock">快速保存</p>
-</td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top">
-<p class="tableblock"><strong>F12</strong></p>
-</td>
-<td class="tableblock halign-left valign-top">
-<p class="tableblock">重置游戏</p>
-</td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top">
-<p class="tableblock"><strong>F4</strong></p>
-</td>
-<td class="tableblock halign-left valign-top">
-<p class="tableblock">画面尺寸变更</p>
-</td>
-</tr>
-</tbody>
 </table>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_攻略">攻略</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_在交互模式下执行">在交互模式下执行</h3>
 <div class="paragraph">
-<p>游戏开始，与吉野对话。</p>
+<p>执行 <span class="monospaced">wren</span> 或 <span class=
+"monospaced">./wren</span> 进入解释器</p>
+</div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>\\/"-
+ \_/   wren v0.2.0
+&gt;</pre></div>
 </div>
 <div class="paragraph">
-<p>1F职员室与彩加对话。</p>
+<p>在 <span class="monospaced">&gt;</span> 的后面输入以下内容，按回车，将显示</p>
+</div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>&gt; System.print("Hello, World")
+Hello, World
+Hello, World
+&gt;</pre></div>
 </div>
 <div class="paragraph">
-<p>1F男厕所调查灭火器。</p>
+<p>在输入的过程中，你可能已经注意到了，输入一半的命令能自动补完。</p>
+</div>
+<div class="admonitionblock">
+<table>
+<tr>
+<td class="icon">
+<div class="title">提示</div>
+</td>
+<td class="content">要退出交互模式，按 <span class=
+"monospaced">Ctrl-C</span> 。</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_回显变量的值">回显变量的值</h3>
+<div class="paragraph">
+<p><span class="monospaced">System.print()</span>
+不仅能回显字符串，还能显示计算结果。</p>
+</div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>// 回显变量
+System.print("4 加 7 等于 %(4 + 7)")</pre></div>
 </div>
 <div class="paragraph">
-<p>1F走廊调查大厅洗手池旁的铁柜，拿到<strong>球棒</strong>。
-调查3F校长室的花瓶，选择破坏，拿到<strong>紧急出口钥匙</strong>。</p>
+<p>输出</p>
 </div>
-<div class="paragraph">
-<p>2F理科室与吉野对话，调查男性尸体。</p>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>4 加 7 等于 11</pre></div>
 </div>
-<div class="paragraph">
-<p>2F图书室与图书室桑对话。</p>
+<div class="admonitionblock">
+<table>
+<tr>
+<td class="icon">
+<div class="title">提示</div>
+</td>
+<td class="content">由于该语句中含有中文，如果在交互模式下执行，将导致 Unhandled key-code
+错误</td>
+</tr>
+</table>
 </div>
-<div class="paragraph">
-<p>3F的3-C教室与对话，触发剧情。</p>
 </div>
 </div>
 </div>
@@ -960,7 +933,7 @@ Steam版</a>为准。</p>
 <div id="footnotes">
 <hr></div>
 <div id="footer">
-<div id="footer-text">更新时间 2020-02-06 02:35:17 CST</div>
+<div id="footer-text">更新时间 2020-02-11 02:13:35 CST</div>
 </div>
 </body>
 </html>

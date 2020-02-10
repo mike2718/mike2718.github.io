@@ -17,7 +17,7 @@ image::title.png["一个人在家时II的游戏标题画面", width=336, link="h
 |===
 |按键|效果
 
-|*↑←↓→*
+|*↑ ← ↓ →*
 |移动
 
 |*Z*
@@ -29,7 +29,7 @@ image::title.png["一个人在家时II的游戏标题画面", width=336, link="h
 |*Shift*
 |加速移动（游戏后期可用）
 
-|*Esc/X*
+|*Esc / X*
 |菜单
 
 |*Ctrl*

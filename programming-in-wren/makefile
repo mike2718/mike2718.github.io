@@ -1,7 +1,7 @@
 ADOC = ~/bin/asciidoc
-AFLAGS = -b html5 -a max-width=55em -a toc2 -a theme=flask
+AFLAGS = -b html5 -a max-width=50em -a toc2
 
-all:	tidy
+all:	tidy adoc
 
 adoc:
 	$(ADOC) $(AFLAGS) index.adoc

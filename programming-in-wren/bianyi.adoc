@@ -1,0 +1,31 @@
+== 编译和安装wren
+
+wren的源代码目前托管在github上，可以很容易的被标准的*nix编译工具链编译。
+
+如果是*nix系统，已经安装了git、make和gcc等工具，编译wren只需要执行以下命令
+
+....
+$ git clone https://github.com/wren-lang/wren.git
+$ cd wren
+$ make
+....
+
+编译成功后可以将wren二进制文件拷贝到系统目录。
+
+执行
+
+ cp wren /usr/local/bin
+
+或执行
+
+....
+mkdir ~/bin
+cp wren ~/bin
+....
+
+执行wren时加上 `--version` 选项将显示wren的版本号，本书所使用的wren版本为
+
+....
+$ wren --version
+wren 0.2.0
+....
