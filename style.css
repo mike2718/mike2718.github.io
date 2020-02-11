@@ -1,1 +1,46 @@
-@charset "utf-8";
+html {
+color:#000;
+background:#FFF;
+}
+
+table {
+border-collapse:collapse;
+border-spacing:0;
+font-size:inherit;
+}
+
+fieldset,img {
+border:0;
+}
+
+li {
+list-style:none;
+}
+
+caption,th {
+text-align:left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+font-size:100%;
+font-weight:400;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,address {
+margin:0;
+padding:0;
+}
+
+body {
+font-family:-apple-system,"Noto Sans","Helvetica Neue",Helvetica,"Nimbus Sans L",Arial,"Liberation Sans","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Source Han Sans SC","Source Han Sans CN","Microsoft YaHei","Wenquanyi Micro Hei","WenQuanYi Zen Hei","ST Heiti",SimHei,"WenQuanYi Zen Hei Sharp",sans-serif;
+padding-bottom:6em;
+min-width:40em;
+}
+
+h1 {
+text-shadow:3px 3px 3px #00F;
+}
+
+p {
+line-height:130%;
+}

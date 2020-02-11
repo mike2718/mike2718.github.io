@@ -6,8 +6,10 @@ touch:
 	touch sitemap.xml
 xml:
 	xmllint --noout sitemap.xml
-tidy:
+tidy:	csstidy
 	tidy -utf8 -m index.html
+csstidy:
+	csstidy style.css style.css
 gitadd:
 	git add *.html style.css makefile README.md sitemap.xml
 gitpush:
