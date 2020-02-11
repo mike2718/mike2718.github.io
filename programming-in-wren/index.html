@@ -783,10 +783,28 @@ table of contents.</b></p>
 </div>
 <div id="content">
 <div class="sect1">
+<h2 id="_基础知识">基础知识</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Wren是一种轻量级的脚本语言，很大程度上受到Smalltalk的影响和一点儿Erlang的影响。
+Wren支持类和并发等特性。</p>
+</div>
+<div class="paragraph">
+<p>不同于C之类的静态语言，Wren解释器是解释执行的，它在执行之前没有被转换为低级的代码。</p>
+</div>
+<div class="paragraph">
+<p>Wren有一个很小的库，称作Wren虚拟机，可以嵌入到其他程序之中。</p>
+</div>
+<div class="paragraph">
+<p>目前Wren主要运行在类UNIX系统上，尚未有支持Wren的IDE。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_编译和安装wren">编译和安装wren</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>wren的源代码目前托管在github上，可以很容易的被标准的*nix编译工具链编译。</p>
+<p>wren的源代码目前托管在github上，可以很容易的被标准的*nix构建工具链编译。</p>
 </div>
 <div class="paragraph">
 <p>如果是*nix系统，已经安装了git、make和gcc等工具，编译wren只需要执行以下命令</p>
@@ -827,44 +845,13 @@ wren 0.2.0</pre></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_执行第一个脚本">执行第一个脚本</h2>
+<h2 id="_执行程序">执行程序</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_执行脚本">执行脚本</h3>
-<div class="paragraph">
-<p>将以下内容保存为 <span class="monospaced">hello.wren</span> 。</p>
-</div>
-<div class="literalblock">
-<div class="content monospaced">
-<pre>// 第一个脚本
-System.print("Hello World")</pre></div>
-</div>
-<div class="paragraph">
-<p>执行</p>
-</div>
-<div class="literalblock">
-<div class="content monospaced">
-<pre>$ wren hello.wren
-Hello World</pre></div>
-</div>
-<div class="admonitionblock">
-<table>
-<tr>
-<td class="icon">
-<div class="title">提示</div>
-</td>
-<td class="content">不像C语言那样，字符串最后最后不需要 <span class=
-"monospaced">\n</span> ，行末尾也不需要 <span class=
-"monospaced">;</span></td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_在交互模式下执行">在交互模式下执行</h3>
+<h3 id="_在交互模式下执行命令">在交互模式下执行命令</h3>
 <div class="paragraph">
 <p>执行 <span class="monospaced">wren</span> 或 <span class=
-"monospaced">./wren</span> 进入解释器</p>
+"monospaced">./wren</span> 进入解释器的交互模式</p>
 </div>
 <div class="literalblock">
 <div class="content monospaced">
@@ -873,12 +860,18 @@ Hello World</pre></div>
 &gt;</pre></div>
 </div>
 <div class="paragraph">
-<p>在 <span class="monospaced">&gt;</span> 的后面输入以下内容，按回车，将显示</p>
+<p>在 <span class="monospaced">&gt;</span> 的后面输入以下内容，按回车</p>
 </div>
 <div class="literalblock">
 <div class="content monospaced">
-<pre>&gt; System.print("Hello, World")
-Hello, World
+<pre>&gt; System.print("Hello, World")</pre></div>
+</div>
+<div class="paragraph">
+<p>输出</p>
+</div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>Hello, World
 Hello, World
 &gt;</pre></div>
 </div>
@@ -898,14 +891,51 @@ Hello, World
 </div>
 </div>
 <div class="sect2">
-<h3 id="_回显变量的值">回显变量的值</h3>
+<h3 id="_执行脚本">执行脚本</h3>
+<div class="paragraph">
+<p>将以下内容保存为 <span class="monospaced">hello.wren</span> 。</p>
+</div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>// 第一个脚本
+System.print("Hello World")</pre></div>
+</div>
+<div class="paragraph">
+<p>使用wren解释器执行</p>
+</div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>wren hello.wren</pre></div>
+</div>
+<div class="paragraph">
+<p>输出</p>
+</div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>Hello World</pre></div>
+</div>
+<div class="admonitionblock">
+<table>
+<tr>
+<td class="icon">
+<div class="title">提示</div>
+</td>
+<td class="content">不像C语言那样，字符串最后不需要 <span class=
+"monospaced">\n</span> ，行末尾也不需要 <span class=
+"monospaced">;</span></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_回显表达式的值">回显表达式的值</h3>
 <div class="paragraph">
 <p><span class="monospaced">System.print()</span>
 不仅能回显字符串，还能显示计算结果。</p>
 </div>
 <div class="literalblock">
 <div class="content monospaced">
-<pre>// 回显变量
+<pre>// 回显表达式
 System.print("4 加 7 等于 %(4 + 7)")</pre></div>
 </div>
 <div class="paragraph">
@@ -915,19 +945,16 @@ System.print("4 加 7 等于 %(4 + 7)")</pre></div>
 <div class="content monospaced">
 <pre>4 加 7 等于 11</pre></div>
 </div>
-<div class="admonitionblock">
-<table>
-<tr>
-<td class="icon">
-<div class="title">提示</div>
-</td>
-<td class="content">由于该语句中含有中文，如果在交互模式下执行，将导致 Unhandled key-code
-错误</td>
-</tr>
-</table>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_做出决策">做出决策</h2>
+<div class="sectionbody"></div>
+</div>
+<div class="sect1">
+<h2 id="_使用函数">使用函数</h2>
+<div class="sectionbody"></div>
 </div>
 </div>
 <div id="footnotes">
