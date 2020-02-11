@@ -9,6 +9,6 @@ xml:
 tidy:
 	tidy -utf8 -m index.html
 gitadd:
-	git add *.html makefile README.md sitemap.xml
+	git add *.html style.css makefile README.md sitemap.xml
 gitpush:
 	git push -u origin master
