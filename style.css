@@ -37,10 +37,53 @@ padding-bottom:6em;
 min-width:40em;
 }
 
+h2 {
+margin-top:10px;
+font-size:125%;
+font-weight:700;
+font-style:normal;
+}
+
+h1,h2,h3,h4,h5,ul,ol,dl,p,pre,blockquote {
+padding:5px 5px 0;
+}
+
+table h4,table p,table ul,table ol {
+padding:0;
+}
+
+dd {
+padding:0 20px 10px;
+}
+
+hr {
+border:5px solid #bcbcbc;
+border-width:0 0 5px;
+margin:20px 20px 0;
+}
+
 h1 {
-text-shadow:3px 3px 3px #00F;
+font-size:131%;
+font-weight:700;
+font-style:normal;
+}
+
+h3 {
+font-size:113%;
+font-weight:400;
+font-style:normal;
 }
 
 p {
 line-height:130%;
+}
+
+ul ul,ol ol,dt {
+padding:0 20px;
+}
+
+h4,h5 {
+font-size:106%;
+font-style:normal;
+font-weight:700;
 }
