@@ -1,0 +1,200 @@
+= Linux命令行工具
+Muir Mok <muirmok@gmail.com>
+:author: Muir Mok
+:imagesdir: images
+:encoding: utf-8
+:lang: zh-CN
+
+== 媒体
+
+=== genisoimage
+
+=== xorriso
+
+
+
+== 图像
+
+=== display
+
+=== qrencode
+
+https://github.com/fukuchi/libqrencode[qrencode]用于创建二维码。
+
+== 网络
+
+=== w3m
+
+
+=== mutt
+
+
+=== whois
+
+查询域名的WHOIS信息。
+
+[source,bash]
+----
+whois example.com
+----
+
+== 归档和压缩
+
+=== tar
+
+创建 `.xz` 归档压缩文件
+
+[source,bash]
+----
+tar -Jcvf 压缩文件.tar.xz 文件或目录名
+----
+
+`-a` 选项会根据给出的压缩文件扩展名，自动判断并压缩
+
+[source,bash]
+----
+tar -acvf 压缩文件.tar.gz 文件或目录名
+----
+
+因为给出了 `.gz` 的扩展名，自动使用gzip压缩
+
+=== cpio
+
+主要用于备份和打包文件。只能接受 `ls` 等命令和管道传递的文件名列表。
+
+将当前目录下的所有文件创建为一个名为 `归档文件.cpio` 的归档
+
+[source,bash]
+----
+ls | cpio -ov > 归档文件.cpio
+----
+
+`-c` 选项用于创建新文件， `-v` 用于列出详细信息。
+
+在当前目录下解开归档
+
+[source,bash]
+----
+cpio -iv < 归档文件.cpio
+----
+=== lha
+
+https://github.com/jca02266/lha[lha]为DOS时代在日本广泛使用的压缩格式，文件扩展名为 `.lha` 或者 `.lzh`
+
+创建 `.lzh` 压缩文件
+
+[source,bash]
+----
+lha c 压缩文件.lzh 文件或目录名
+----
+
+解压缩 `.lzh` 文件
+
+[source,bash]
+----
+lha x 压缩文件.lzh
+----
+
+== 处理文本
+
+=== xvi
+
+https://github.com/martinwguy/xvi[xvi]是一个vi编辑器。
+可惜在中文Ubuntu系统上无法显示汉字。
+
+[source,bash]
+----
+xvi
+----
+
+=== nvi
+
+http://repo.or.cz/w/nvi.git[nvi]也是一个vi克隆，对汉字的支持好。
+
+[source,bash]
+----
+nvi
+----
+
+=== unix2dos
+
+用于把类Unix系统的文件转换为Windows的文件。用于转换文本文件。
+
+[source,bash]
+----
+unix2dos 要转换的文件
+----
+
+=== dos2unix
+
+用于把Windows的文件转换为类Unix系统的文件。用于转换文本文件。
+
+[source,bash]
+----
+dos2unix 要转换的文件
+----
+
+=== tidy
+
+https://github.com/htacg/tidy-html5[tidy]用于对HTML文件进行重排。
+
+[source,bash]
+----
+tidy HTML文件
+----
+
+=== csstidy
+
+https://github.com/csstidy-c/csstidy[csstidy]用于对CSS文件进行重排。
+
+[source,bash]
+----
+csstidy CSS文件
+----
+
+== 搜索文件
+
+
+== 打印
+
+== 编译
+
+=== upx
+
+用于压缩可执行文件。可以对Windows的可执行文件和Linux的可执行文件进行压缩。
+
+[source,bash]
+----
+upx 可执行文件名
+----
+
+== 加密
+
+=== sha1sum
+
+可以计算文件的摘要（一个长字符串）。由于MD5已经很少使用，推荐至少使用sha1
+
+[source,bash]
+----
+sha1sum 要计算的文件
+----
+
+=== sha256sum
+
+== 其它
+
+=== bc
+
+用于简单数学计算。
+
+[source,bash]
+----
+$ bc
+bc 1.07.1
+Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2017 Free Software Foundation, Inc.
+This is free software with ABSOLUTELY NO WARRANTY.
+For details type `warranty'.
+23+17
+40
+quit
+----

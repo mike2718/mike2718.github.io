@@ -5,7 +5,7 @@
 "HTML Tidy for HTML5 for Linux version 5.7.28">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="generator" content="AsciiDoc 9.0.0rc1">
-<title>学习ed行编辑器</title>
+<title>Linux命令行工具</title>
 
 <style type="text/css">
 /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
@@ -770,7 +770,7 @@ asciidoc.install(2);
 </head>
 <body class="article" style="max-width:55em">
 <div id="header">
-<h1>学习ed行编辑器</h1>
+<h1>Linux命令行工具</h1>
 <span id="author">Muir Mok</span><br>
 <span id="email" class="monospaced">&lt;<a href=
 "mailto:muirmok@gmail.com">muirmok@gmail.com</a>&gt;</span><br>
@@ -783,237 +783,336 @@ table of contents.</b></p>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_基础知识">基础知识</h2>
+<h2 id="_媒体">媒体</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>ed是一种基于行的编辑器。在大多数类Unix系统上可以找到。 它的存在影响了后来的ex、vi编辑器和sed。</p>
+<div class="sect2">
+<h3 id="_genisoimage">genisoimage</h3>
 </div>
-<div class="paragraph">
-<p>
-它是最早开发出来的Unix系统组件之一。由于当时的输入设备是简陋的终端机，这导致了它的设计相当简洁，这也使得它对于初学者有一定难度。</p>
+<div class="sect2">
+<h3 id="_xorriso">xorriso</h3>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_进入和退出">进入和退出</h2>
+<h2 id="_图像">图像</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>本教程使用GNU ed 1.10作为示范，以下所有命令在Ubuntu 18.04系统上运行。</p>
+<div class="sect2">
+<h3 id="_display">display</h3>
 </div>
+<div class="sect2">
+<h3 id="_qrencode">qrencode</h3>
 <div class="paragraph">
-<p>要进入ed编辑器，在终端输入 <span class="monospaced">ed</span> 回车；要退出ed，输入
-<span class="monospaced">q</span> 回车。</p>
+<p><a href=
+"https://github.com/fukuchi/libqrencode">qrencode</a>用于创建二维码。</p>
 </div>
-<div class="listingblock">
-<div class="content monospaced">
-<pre>$ ed
-q</pre></div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_写入新的行">写入新的行</h2>
+<h2 id="_网络">网络</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>
-不像nano，gedit等编辑器那样，在打开的ed上，立即输入一连串的字符串不会被“记录”下来，我们必须先敲入命令，才能进行输入，输入结束后，还要输入结束的命令。</p>
+<div class="sect2">
+<h3 id="_w3m">w3m</h3>
 </div>
+<div class="sect2">
+<h3 id="_mutt">mutt</h3>
+</div>
+<div class="sect2">
+<h3 id="_whois">whois</h3>
 <div class="paragraph">
-<p>输入 <span class="monospaced">ed</span> 回车，输入 <span class=
-"monospaced">a</span> 回车，再输入 <span class="monospaced">first
-line</span> 回车，最后输入 <span class="monospaced">.</span> 回车。</p>
+<p>查询域名的WHOIS信息。</p>
 </div>
 <div class="listingblock">
-<div class="content monospaced">
-<pre>$ ed
-a
-first line
-.</pre></div>
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>whois example<span style=
+"color: #990000">.</span>com</tt></pre></div>
 </div>
-<div class="paragraph">
-<p>这里，输入的 <span class="monospaced">a</span>
-命令是让我们进入了ed的插入模式，在插入模式下，我们才可以进行键盘输入。输入的 <span class=
-"monospaced">.</span> 表示我们的输入已经完成。</p>
-</div>
-<div class="paragraph">
-<p>即使现在画面上没有什么新的变化，我们在ed上确实输入了内容。</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_列出行">列出行</h2>
+<h2 id="_归档和压缩">归档和压缩</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_tar">tar</h3>
 <div class="paragraph">
-<p>输入 <span class="monospaced">n</span> 回车。</p>
+<p>创建 <span class="monospaced">.xz</span> 归档压缩文件</p>
 </div>
 <div class="listingblock">
-<div class="content monospaced">
-<pre>n
-1       first line</pre></div>
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>tar -Jcvf 压缩文件<span style=
+"color: #990000">.</span>tar<span style=
+"color: #990000">.</span>xz 文件或目录名</tt></pre></div>
 </div>
 <div class="paragraph">
-<p><span class="monospaced">n</span>
-命令用于列出行的内容。我们看到首先显示了数字1，表示目前显示的是第一行的内容，紧跟若干个空格，就是刚才我们输入的first
-line。</p>
+<p><span class="monospaced">-a</span> 选项会根据给出的压缩文件扩展名，自动判断并压缩</p>
 </div>
-<div class="admonitionblock">
-<table>
-<tr>
-<td class="icon">
-<div class="title">提示</div>
-</td>
-<td class="content"><span class="monospaced">n</span>
-默认显示行号。如果不需要行号，输入 <span class="monospaced">p</span> 。</td>
-</tr>
-</table>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>tar -acvf 压缩文件<span style=
+"color: #990000">.</span>tar<span style=
+"color: #990000">.</span>gz 文件或目录名</tt></pre></div>
+</div>
+<div class="paragraph">
+<p>因为给出了 <span class="monospaced">.gz</span> 的扩展名，自动使用gzip压缩</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cpio">cpio</h3>
+<div class="paragraph">
+<p>主要用于备份和打包文件。只能接受 <span class="monospaced">ls</span>
+等命令和管道传递的文件名列表。</p>
+</div>
+<div class="paragraph">
+<p>将当前目录下的所有文件创建为一个名为 <span class="monospaced">归档文件.cpio</span>
+的归档</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>ls <span style=
+"color: #990000">|</span> cpio -ov <span style=
+"color: #990000">&gt;</span> 归档文件<span style=
+"color: #990000">.</span>cpio</tt></pre></div>
+</div>
+<div class="paragraph">
+<p><span class="monospaced">-c</span> 选项用于创建新文件， <span class=
+"monospaced">-v</span> 用于列出详细信息。</p>
+</div>
+<div class="paragraph">
+<p>在当前目录下解开归档</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>cpio -iv <span style=
+"color: #990000">&lt;</span> 归档文件<span style=
+"color: #990000">.</span>cpio</tt></pre></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lha">lha</h3>
+<div class="paragraph">
+<p><a href=
+"https://github.com/jca02266/lha">lha</a>为DOS时代在日本广泛使用的压缩格式，文件扩展名为
+<span class="monospaced">.lha</span> 或者 <span class=
+"monospaced">.lzh</span></p>
+</div>
+<div class="paragraph">
+<p>创建 <span class="monospaced">.lzh</span> 压缩文件</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>lha c 压缩文件<span style=
+"color: #990000">.</span>lzh 文件或目录名</tt></pre></div>
+</div>
+<div class="paragraph">
+<p>解压缩 <span class="monospaced">.lzh</span> 文件</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>lha x 压缩文件<span style=
+"color: #990000">.</span>lzh</tt></pre></div>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_插入行">插入行</h2>
+<h2 id="_处理文本">处理文本</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_xvi">xvi</h3>
 <div class="paragraph">
-<p>输入 <span class="monospaced">i</span> 回车，输入 <span class=
-"monospaced">hello ed</span> 回车，最后输入 <span class=
-"monospaced">.</span> 回车。</p>
+<p><a href="https://github.com/martinwguy/xvi">xvi</a>是一个vi编辑器。
+可惜在中文Ubuntu系统上无法显示汉字。</p>
 </div>
 <div class="listingblock">
-<div class="content monospaced">
-<pre>i
-hello ed
-.</pre></div>
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>xvi</tt></pre></div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_nvi">nvi</h3>
 <div class="paragraph">
-<p><span class="monospaced">i</span>
-的作用是在上一行输入内容，通过列出整个文件的内容，可以看到我们确实在原来的first line的上方插入了hello ed。</p>
+<p><a href=
+"http://repo.or.cz/w/nvi.git">nvi</a>也是一个vi克隆，对汉字的支持好。</p>
 </div>
-<div class="admonitionblock">
-<table>
-<tr>
-<td class="icon">
-<div class="title">提示</div>
-</td>
-<td class="content"><span class="monospaced">i</span> 是向上插入行，
-<span class="monospaced">a</span> 是向下插入行。</td>
-</tr>
-</table>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>nvi</tt></pre></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_unix2dos">unix2dos</h3>
+<div class="paragraph">
+<p>用于把类Unix系统的文件转换为Windows的文件。用于转换文本文件。</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>unix2dos 要转换的文件</tt></pre></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dos2unix">dos2unix</h3>
+<div class="paragraph">
+<p>用于把Windows的文件转换为类Unix系统的文件。用于转换文本文件。</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>dos2unix 要转换的文件</tt></pre></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tidy">tidy</h3>
+<div class="paragraph">
+<p><a href=
+"https://github.com/htacg/tidy-html5">tidy</a>用于对HTML文件进行重排。</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>tidy HTML文件</tt></pre></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_csstidy">csstidy</h3>
+<div class="paragraph">
+<p><a href=
+"https://github.com/csstidy-c/csstidy">csstidy</a>用于对CSS文件进行重排。</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>csstidy CSS文件</tt></pre></div>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_列出所有行">列出所有行</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>接下来我们来看看整个文件的内容，输入 <span class="monospaced">1,$n</span></p>
-</div>
-<div class="listingblock">
-<div class="content monospaced">
-<pre>1,$n
-1       hello ed
-2       first line</pre></div>
-</div>
-<div class="paragraph">
-<p><span class="monospaced">1,$n</span> 的作用是列出文件从第一行到最后一行的内容，
-<span class="monospaced">1,$</span>
-表示指定从第一行到最后一行的范围，这种指定范围的办法也可以用在其它命令上。</p>
-</div>
-<div class="paragraph">
-<p>可以看到我们确实输入了内容，hello ed位于第一行，first line位于第二行。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_修改行">修改行</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>我们现在来修改第二行的内容，输入 <span class="monospaced">2c</span> 回车，再输入
-<span class="monospaced">second line</span> 回车， 最后输入 <span class=
-"monospaced">.</span> 回车。</p>
-</div>
-<div class="listingblock">
-<div class="content monospaced">
-<pre>2c
-second line
-.</pre></div>
-</div>
-<div class="paragraph">
-<p><span class="monospaced">2c</span>
-表示“修改第二行的内容”，ed每次只能修改一行，其中数字2指定了要修改的行数，c是修改的命令。</p>
-</div>
-<div class="paragraph">
-<p>再来看看文件现在的内容，输入 <span class="monospaced">1,$n</span></p>
-</div>
-<div class="listingblock">
-<div class="content monospaced">
-<pre>1,$n
-1       hello ed
-2       second line</pre></div>
-</div>
-<div class="paragraph">
-<p>可以看到文件的第二行被我们修改了，first没有了，改成了second。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_保存文件">保存文件</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>最后我们执行 <span class="monospaced">w text</span>
-命令，将文件保存到一个名为text的文件中。 保存完成后，ed输出了 <span class=
-"monospaced">21</span> ，表示写入了总共 <span class="monospaced">21</span>
-个字符。</p>
-</div>
-<div class="listingblock">
-<div class="content monospaced">
-<pre>w text
-21
-q</pre></div>
-</div>
-<div class="paragraph">
-<p><span class="monospaced">w</span> 是“保存”的命令。 <span class=
-"monospaced">w file</span> 表示将目前的内容保存到一个名字叫做 <span class=
-"monospaced">file</span> 的文件中。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_删除行">删除行</h2>
+<h2 id="_搜索文件">搜索文件</h2>
 <div class="sectionbody"></div>
 </div>
 <div class="sect1">
-<h2 id="_执行外部命令">执行外部命令</h2>
+<h2 id="_打印">打印</h2>
+<div class="sectionbody"></div>
+</div>
+<div class="sect1">
+<h2 id="_编译">编译</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_upx">upx</h3>
 <div class="paragraph">
-<p><span class="monospaced">!</span> 后面跟命令，可以将外部命令的输出显示在ed中。</p>
+<p>用于压缩可执行文件。可以对Windows的可执行文件和Linux的可执行文件进行压缩。</p>
 </div>
 <div class="listingblock">
-<div class="content monospaced">
-<pre>$ ed
-!date
-Thu Feb 13 04:26:34 CST 2020
-!</pre></div>
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>upx 可执行文件名</tt></pre></div>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_命令行选项">命令行选项</h2>
+<h2 id="_加密">加密</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_sha1sum">sha1sum</h3>
 <div class="paragraph">
-<p>以下是GNU ed可用的命令行选项：</p>
+<p>可以计算文件的摘要（一个长字符串）。由于MD5已经很少使用，推荐至少使用sha1</p>
 </div>
 <div class="listingblock">
-<div class="content monospaced">
-<pre>用法： ed [选项] [文件]
-
-选项：
-  -h，--help                 显示此帮助并退出
-  -V，--version              输出版本信息并退出
-  -G，--traditional          使用兼容模式运行
-  -l，--loose-exit-status    即使命令失败，也以状态 0 退出
-  -p，--prompt=STRING        使用 STRING 作为交互提示符
-  -r，--restricted           以受限模式运行
-  -s，--quiet                静默模式
-  -v，--verbose              输出详细内容</pre></div>
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>sha1sum 要计算的文件</tt></pre></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sha256sum">sha256sum</h3>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_其它">其它</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_bc">bc</h3>
+<div class="paragraph">
+<p>用于简单数学计算。</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>$ bc
+bc <span style="color: #993399">1.07</span><span style=
+"color: #990000">.</span><span style="color: #993399">1</span>
+Copyright <span style="color: #993399">1991</span>-<span style=
+"color: #993399">1994</span><span style=
+"color: #990000">,</span> <span style=
+"color: #993399">1997</span><span style=
+"color: #990000">,</span> <span style=
+"color: #993399">1998</span><span style=
+"color: #990000">,</span> <span style=
+"color: #993399">2000</span><span style=
+"color: #990000">,</span> <span style=
+"color: #993399">2004</span><span style=
+"color: #990000">,</span> <span style=
+"color: #993399">2006</span><span style=
+"color: #990000">,</span> <span style=
+"color: #993399">2008</span><span style=
+"color: #990000">,</span> <span style=
+"color: #993399">2012</span>-<span style=
+"color: #993399">2017</span> Free Software Foundation<span style=
+"color: #990000">,</span> Inc<span style="color: #990000">.</span>
+This is free software with ABSOLUTELY NO WARRANTY<span style=
+"color: #990000">.</span>
+For details <span style="font-weight: bold"><span style=
+"color: #0000FF">type</span></span> `warranty<span style=
+"color: #FF0000">'.</span>
+<span style="color: #FF0000">23+17</span>
+<span style="color: #FF0000">40</span>
+<span style="color: #FF0000">quit</span></tt></pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -1021,7 +1120,7 @@ Thu Feb 13 04:26:34 CST 2020
 <div id="footnotes">
 <hr></div>
 <div id="footer">
-<div id="footer-text">更新时间 2020-02-13 04:32:29 CST</div>
+<div id="footer-text">更新时间 2020-02-14 02:03:56 CST</div>
 </div>
 </body>
 </html>
