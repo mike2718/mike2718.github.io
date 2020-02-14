@@ -11,6 +11,6 @@ tidy:	csstidy
 csstidy:
 	csstidy style.css style.css
 gitadd:
-	git add *.html style.css makefile README.md sitemap.xml
+	git add index.html 404.html style.css makefile README.md sitemap.xml
 gitpush:
 	git push -u origin master

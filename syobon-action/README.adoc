@@ -1,7 +1,0 @@
-== 关于本书
-
-本书是变态猫版超级玛丽（日文：しょぼんのアクション，英文：Syobon Action，又翻译作超级玛丽猫里奥）游戏的攻略。
-
-游戏攻略使用了https://github.com/angelXwind/OpenSyobonAction[Open Syobon Action]的https://github.com/angelXwind/OpenSyobonAction/commit/77ca2c128784512eca10e24a453ca19c270a8af4[77ca2c1]版源代码在Ubuntu上编译，进行游戏。
-
-本攻略主要是为了快速攻略游戏而写作。因此会忽略掉关卡中一些细节部分。

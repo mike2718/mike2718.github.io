@@ -5,6 +5,53 @@ Muir Mok <muirmok@gmail.com>
 :encoding: utf-8
 :lang: zh-CN
 
+== 系统
+
+=== ls
+
+ls用于列出文件。
+
+以KB,MB的格式列出文件大小。
+
+[source,bash]
+----
+ls -lh 文件名
+----
+
+=== du
+
+du用于显示文件占用的空间。
+
+显示一个目录的总大小，用
+
+[source,bash]
+----
+ls -sh 目录
+----
+
+如果要计算多个目录的总大小，用
+
+[source,bash]
+----
+ls -sch 目录1 目录2
+----
+
+=== shutdown
+
+立即关机
+
+[source,bash]
+----
+shutdown -h now
+----
+
+立即重新启动
+
+[source,bash]
+----
+shutdown -r now
+----
+
 == 媒体
 
 === genisoimage

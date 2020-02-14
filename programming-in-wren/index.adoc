@@ -1,4 +1,4 @@
-= Wren语言程序设计
+= Wren脚本语言编程
 Muir Mok <muirmok@gmail.com>
 :author: Muir Mok
 :imagesdir: images
@@ -12,12 +12,4 @@ include::bianyi.adoc[]
 include::zhixing.adoc[]
 
 include::bianliang.adoc[]
-
-include::xunhuan.adoc[]
-
-include::juece.adoc[]
-
-include::hanshu.adoc[]
-
-include::lei.adoc[]
 
