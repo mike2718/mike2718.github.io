@@ -1,0 +1,35 @@
+= Swarm贴纸攻略
+Muir Mok <muirmok@gmail.com>
+:author: Muir Mok
+:imagesdir: images
+:encoding: utf-8
+:lang: zh-CN
+
+== 可收集的贴纸
+
+.可收集的贴纸列表
+|===
+|贴纸 |分类 |描述 
+
+|1UP
+|Arcade +
+街机
+|Check in at arcades to unlock this sticker. +
+在街机厅签到以解锁此贴纸。
+
+|7-10 Split
+|Bowling Alley +
+保龄球馆
+|Check in at bowling alleys to unlock this sticker. +
+在保龄球馆签到以解锁此贴纸。
+
+|Ain't No Thang
+|Wings Joint +
+烤鸡翅店
+|Check in at wing joints to unlock this sticker. +
+在烤鸡翅店签到以解锁此贴纸。
+|===
+
+
+== 奖励贴纸
+

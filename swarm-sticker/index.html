@@ -5,7 +5,7 @@
 "HTML Tidy for HTML5 for Linux version 5.7.28">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="generator" content="AsciiDoc 9.0.0rc1">
-<title>Linux命令行工具</title>
+<title>Swarm贴纸攻略</title>
 
 <style type="text/css">
 /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
@@ -89,15 +89,9 @@ ul, ol, li > p {
 ul > li     { color: #aaa; }
 ul > li > * { color: black; }
 
-.monospaced, code, pre {
-  font-family: "Courier New", Courier, monospace;
-  font-size: inherit;
-  color: navy;
+pre {
   padding: 0;
   margin: 0;
-}
-pre {
-  white-space: pre-wrap;
 }
 
 #author {
@@ -187,7 +181,7 @@ div.quoteblock, div.verseblock {
   margin-left: 1.0em;
   margin-right: 10%;
   border-left: 5px solid #f0f0f0;
-  color: #888;
+  color: #777777;
 }
 
 div.quoteblock > div.attribution {
@@ -227,7 +221,7 @@ div.exampleblock > div.content {
 }
 
 div.imageblock div.content { padding-left: 0; }
-span.image img { border-style: none; vertical-align: text-bottom; }
+span.image img { border-style: none; }
 a.image:visited { color: white; }
 
 dl {
@@ -357,7 +351,7 @@ div.colist td img {
   margin-bottom: 0.1em;
 }
 
-div.toclevel0, div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -415,13 +409,17 @@ span.underline { text-decoration: underline; }
 span.overline { text-decoration: overline; }
 span.line-through { text-decoration: line-through; }
 
-div.unbreakable { page-break-inside: avoid; }
-
 
 /*
  * xhtml11 specific
  *
  * */
+
+tt {
+  font-family: monospace;
+  font-size: inherit;
+  color: navy;
+}
 
 div.tableblock {
   margin-top: 1.0em;
@@ -455,6 +453,12 @@ div.tableblock > table[frame="vsides"] {
  * html5 specific
  *
  * */
+
+.monospaced {
+  font-family: monospace;
+  font-size: inherit;
+  color: navy;
+}
 
 table.tableblock {
   margin-top: 1.0em;
@@ -535,6 +539,72 @@ body.manpage div.sectionbody {
 @media print {
   body.manpage div#toc { display: none; }
 }
+
+
+/*
+ * Theme specific overrides of the preceding (asciidoc.css) CSS.
+ *
+ */
+body {
+  font-family: Garamond, Georgia, serif;
+  font-size: 17px;
+  color: #3E4349;
+  line-height: 1.3em;
+}
+h1, h2, h3, h4, h5, h6,
+div.title, caption.title,
+thead, p.table.header,
+#toctitle,
+#author, #revnumber, #revdate, #revremark,
+#footer {
+  font-family: Garmond, Georgia, serif;
+  font-weight: normal;
+  border-bottom-width: 0;
+  color: #3E4349;
+}
+div.title, caption.title { color: #596673; font-weight: bold; }
+h1 { font-size: 240%; }
+h2 { font-size: 180%; }
+h3 { font-size: 150%; }
+h4 { font-size: 130%; }
+h5 { font-size: 115%; }
+h6 { font-size: 100%; }
+#header h1 { margin-top: 0; }
+#toc {
+  color: #444444;
+  line-height: 1.5;
+  padding-top: 1.5em;
+}
+#toctitle {
+  font-size: 20px;
+}
+#toc a {
+    border-bottom: 1px dotted #999999;
+    color: #444444 !important;
+    text-decoration: none !important;
+}
+#toc a:hover {
+    border-bottom: 1px solid #6D4100;
+    color: #6D4100 !important;
+    text-decoration: none !important;
+}
+div.toclevel1 { margin-top: 0.2em; font-size: 16px; }
+div.toclevel2 { margin-top: 0.15em; font-size: 14px; }
+em, dt, td.hdlist1 { color: black; }
+strong { color: #3E4349; }
+a { color: #004B6B; text-decoration: none; border-bottom: 1px dotted #004B6B; }
+a:visited { color: #615FA0; border-bottom: 1px dotted #615FA0; }
+a:hover { color: #6D4100; border-bottom: 1px solid #6D4100; }
+div.tableblock > table, table.tableblock { border: 3px solid #E8E8E8; }
+th.tableblock, td.tableblock { border: 1px solid #E8E8E8; }
+ul > li > * { color: #3E4349; }
+pre, tt, .monospaced { font-family: Consolas,Menlo,'Deja Vu Sans Mono','Bitstream Vera Sans Mono',monospace; }
+tt, .monospaced { font-size: 0.9em; color: black;
+}
+div.exampleblock > div.content, div.sidebarblock > div.content, div.listingblock > div.content { border-width: 0 0 0 3px; border-color: #E8E8E8; }
+div.verseblock { border-left-width: 0; margin-left: 3em; }
+div.quoteblock { border-left-width: 3px; margin-left: 0; margin-right: 0;}
+div.admonitionblock td.content { border-left: 3px solid #E8E8E8; }
 
 
 @media screen {
@@ -770,7 +840,7 @@ asciidoc.install(2);
 </head>
 <body class="article" style="max-width:55em">
 <div id="header">
-<h1>Linux命令行工具</h1>
+<h1>Swarm贴纸攻略</h1>
 <span id="author">Muir Mok</span><br>
 <span id="email" class="monospaced">&lt;<a href=
 "mailto:muirmok@gmail.com">muirmok@gmail.com</a>&gt;</span><br>
@@ -783,426 +853,80 @@ table of contents.</b></p>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_系统">系统</h2>
+<h2 id="_可收集的贴纸">可收集的贴纸</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_ls">ls</h3>
-<div class="paragraph">
-<p>ls用于列出文件。</p>
-</div>
-<div class="paragraph">
-<p>以KB,MB的格式列出文件大小。</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>ls -lh 文件名</tt></pre></div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_du">du</h3>
-<div class="paragraph">
-<p>du用于显示文件占用的空间。</p>
-</div>
-<div class="paragraph">
-<p>显示一个目录的总大小，用</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>ls -sh 目录</tt></pre></div>
-</div>
-<div class="paragraph">
-<p>如果要计算多个目录的总大小，用</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>ls -sch 目录<span style=
-"color: #993399">1</span> 目录<span style=
-"color: #993399">2</span></tt></pre></div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_shutdown">shutdown</h3>
-<div class="paragraph">
-<p>立即关机</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>shutdown -h now</tt></pre></div>
-</div>
-<div class="paragraph">
-<p>立即重新启动</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>shutdown -r now</tt></pre></div>
-</div>
-</div>
+<table class="tableblock frame-all grid-all" style="width:100%;">
+<caption class="title">表 1. 可收集的贴纸列表</caption>
+<col style="width:33%;">
+<col style="width:33%;">
+<col style="width:33%;">
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">贴纸</p>
+</td>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">分类</p>
+</td>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">描述</p>
+</td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">1UP</p>
+</td>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">Arcade<br>
+街机</p>
+</td>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">Check in at arcades to unlock this
+sticker.<br>
+在街机厅签到以解锁此贴纸。</p>
+</td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">7-10 Split</p>
+</td>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">Bowling Alley<br>
+保龄球馆</p>
+</td>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">Check in at bowling alleys to unlock this
+sticker.<br>
+在保龄球馆签到以解锁此贴纸。</p>
+</td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">Ain’t No Thang</p>
+</td>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">Wings Joint<br>
+烤鸡翅店</p>
+</td>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">Check in at wing joints to unlock this
+sticker.<br>
+在烤鸡翅店签到以解锁此贴纸。</p>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_媒体">媒体</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_genisoimage">genisoimage</h3>
-</div>
-<div class="sect2">
-<h3 id="_xorriso">xorriso</h3>
-</div>
-<div class="sect2">
-<h3 id="_shred">shred</h3>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>shred -uv 要彻底删除的文件</tt></pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_图像">图像</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_display">display</h3>
-</div>
-<div class="sect2">
-<h3 id="_qrencode">qrencode</h3>
-<div class="paragraph">
-<p><a href=
-"https://github.com/fukuchi/libqrencode">qrencode</a>用于创建二维码。</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_网络">网络</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_w3m">w3m</h3>
-</div>
-<div class="sect2">
-<h3 id="_mutt">mutt</h3>
-</div>
-<div class="sect2">
-<h3 id="_whois">whois</h3>
-<div class="paragraph">
-<p>查询域名的WHOIS信息。</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>whois example<span style=
-"color: #990000">.</span>com</tt></pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_归档和压缩">归档和压缩</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_tar">tar</h3>
-<div class="paragraph">
-<p>创建 <span class="monospaced">.xz</span> 归档压缩文件</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>tar -Jcvf 压缩文件<span style=
-"color: #990000">.</span>tar<span style=
-"color: #990000">.</span>xz 文件或目录名</tt></pre></div>
-</div>
-<div class="paragraph">
-<p><span class="monospaced">-a</span> 选项会根据给出的压缩文件扩展名，自动判断并压缩</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>tar -acvf 压缩文件<span style=
-"color: #990000">.</span>tar<span style=
-"color: #990000">.</span>gz 文件或目录名</tt></pre></div>
-</div>
-<div class="paragraph">
-<p>因为给出了 <span class="monospaced">.gz</span> 的扩展名，自动使用gzip压缩</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_cpio">cpio</h3>
-<div class="paragraph">
-<p>主要用于备份和打包文件。只能接受 <span class="monospaced">ls</span>
-等命令和管道传递的文件名列表。</p>
-</div>
-<div class="paragraph">
-<p>将当前目录下的所有文件创建为一个名为 <span class="monospaced">归档文件.cpio</span>
-的归档</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>ls <span style=
-"color: #990000">|</span> cpio -ov <span style=
-"color: #990000">&gt;</span> 归档文件<span style=
-"color: #990000">.</span>cpio</tt></pre></div>
-</div>
-<div class="paragraph">
-<p><span class="monospaced">-c</span> 选项用于创建新文件， <span class=
-"monospaced">-v</span> 用于列出详细信息。</p>
-</div>
-<div class="paragraph">
-<p>在当前目录下解开归档</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>cpio -iv <span style=
-"color: #990000">&lt;</span> 归档文件<span style=
-"color: #990000">.</span>cpio</tt></pre></div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_lha">lha</h3>
-<div class="paragraph">
-<p><a href=
-"https://github.com/jca02266/lha">lha</a>为DOS时代在日本广泛使用的压缩格式，文件扩展名为
-<span class="monospaced">.lha</span> 或者 <span class=
-"monospaced">.lzh</span></p>
-</div>
-<div class="paragraph">
-<p>创建 <span class="monospaced">.lzh</span> 压缩文件</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>lha c 压缩文件<span style=
-"color: #990000">.</span>lzh 文件或目录名</tt></pre></div>
-</div>
-<div class="paragraph">
-<p>解压缩 <span class="monospaced">.lzh</span> 文件</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>lha x 压缩文件<span style=
-"color: #990000">.</span>lzh</tt></pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_处理文本">处理文本</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_xvi">xvi</h3>
-<div class="paragraph">
-<p><a href="https://github.com/martinwguy/xvi">xvi</a>是一个vi编辑器。
-可惜在中文Ubuntu系统上无法显示汉字。</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>xvi</tt></pre></div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_nvi">nvi</h3>
-<div class="paragraph">
-<p><a href=
-"http://repo.or.cz/w/nvi.git">nvi</a>也是一个vi克隆，对汉字的支持好。</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>nvi</tt></pre></div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_unix2dos">unix2dos</h3>
-<div class="paragraph">
-<p>用于把类Unix系统的文件转换为Windows的文件。用于转换文本文件。</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>unix2dos 要转换的文件</tt></pre></div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_dos2unix">dos2unix</h3>
-<div class="paragraph">
-<p>用于把Windows的文件转换为类Unix系统的文件。用于转换文本文件。</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>dos2unix 要转换的文件</tt></pre></div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_tidy">tidy</h3>
-<div class="paragraph">
-<p><a href=
-"https://github.com/htacg/tidy-html5">tidy</a>用于对HTML文件进行重排。</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>tidy HTML文件</tt></pre></div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_csstidy">csstidy</h3>
-<div class="paragraph">
-<p><a href=
-"https://github.com/csstidy-c/csstidy">csstidy</a>用于对CSS文件进行重排。</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>csstidy CSS文件</tt></pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_搜索文件">搜索文件</h2>
+<h2 id="_奖励贴纸">奖励贴纸</h2>
 <div class="sectionbody"></div>
-</div>
-<div class="sect1">
-<h2 id="_打印">打印</h2>
-<div class="sectionbody"></div>
-</div>
-<div class="sect1">
-<h2 id="_编译">编译</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_upx">upx</h3>
-<div class="paragraph">
-<p>用于压缩可执行文件。可以对Windows的可执行文件和Linux的可执行文件进行压缩。</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>upx 可执行文件名</tt></pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_加密">加密</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_sha1sum">sha1sum</h3>
-<div class="paragraph">
-<p>可以计算文件的摘要（一个长字符串）。由于MD5已经很少使用，推荐至少使用sha1</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>sha1sum 要计算的文件</tt></pre></div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_sha256sum">sha256sum</h3>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_其它">其它</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_bc">bc</h3>
-<div class="paragraph">
-<p>用于简单数学计算。</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>$ bc
-bc <span style="color: #993399">1.07</span><span style=
-"color: #990000">.</span><span style="color: #993399">1</span>
-Copyright <span style="color: #993399">1991</span>-<span style=
-"color: #993399">1994</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">1997</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">1998</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">2000</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">2004</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">2006</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">2008</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">2012</span>-<span style=
-"color: #993399">2017</span> Free Software Foundation<span style=
-"color: #990000">,</span> Inc<span style="color: #990000">.</span>
-This is free software with ABSOLUTELY NO WARRANTY<span style=
-"color: #990000">.</span>
-For details <span style="font-weight: bold"><span style=
-"color: #0000FF">type</span></span> `warranty<span style=
-"color: #FF0000">'.</span>
-<span style="color: #FF0000">23+17</span>
-<span style="color: #FF0000">40</span>
-<span style="color: #FF0000">quit</span></tt></pre></div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div id="footnotes">
 <hr></div>
 <div id="footer">
-<div id="footer-text">更新时间 2020-02-15 03:24:37 CST</div>
+<div id="footer-text">更新时间 2020-02-15 00:05:25 CST</div>
 </div>
 </body>
 </html>

@@ -58,7 +58,12 @@ shutdown -r now
 
 === xorriso
 
+=== shred
 
+[source,bash]
+----
+shred -uv 要彻底删除的文件
+----
 
 == 图像
 
