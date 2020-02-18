@@ -5,31 +5,102 @@ Muir Mok <muirmok@gmail.com>
 :encoding: utf-8
 :lang: zh-CN
 
+您如果想帮助完成本页，请到 https://github.com/muirmok/muirmok.github.io[此处]提交Pull request。
+
 == 可收集的贴纸
 
 .可收集的贴纸列表
 |===
-|贴纸 |分类 |描述 
+|贴纸 |签到分类 |描述 
 
 |1UP
 |Arcade +
 街机
-|Check in at arcades to unlock this sticker. +
-在街机厅签到以解锁此贴纸。
+|You know every NBA Jam cheat code, always Triple Buck, and would rather eat your quarter than use Raphael. Arcade or console, you're always Player One.
 
 |7-10 Split
 |Bowling Alley +
 保龄球馆
-|Check in at bowling alleys to unlock this sticker. +
-在保龄球馆签到以解锁此贴纸。
+|
 
 |Ain't No Thang
 |Wings Joint +
 烤鸡翅店
-|Check in at wing joints to unlock this sticker. +
-在烤鸡翅店签到以解锁此贴纸。
+|
+
+|Baggs
+|Food & Drink Shop
+|They're out of milk, your cart's wheel is busted, and that lady has way more than 10 items! Here's hoping Baggs doesn't dump your eggs on the ground.
+
+|Baked
+|Bakery +
+面包店
+|Is that freshly baked bread and croissants you smell? Good thing you always roll with butter in your fifth pocket. That IS what it's for, right??
+
+|Bargain Bin
+|Thrift / Vintage Store
+|I'm gonna pop some tags. Hey! found $20 in this pocket.
+
+|Beach Bum
+|Beach
+|
+
+|Berry Nice
+|Farmers Market
+|A fresh, locally-sourced, gluten-free, non-GMO organic sticker, picked just for you.
+
+|Big Poppy
+|Movie Theater
+|This sticker's also available in IMAX 3D but it's gonna cost you another 50 check-ins. Enjoy the show, and try to ignore those teens sucking face.
+
+|Bogey
+|Golf Course
+|
+
+|Bon Appétit
+|French Restaurant
+|Pardon my French, but this tastes like crepe! (which is great, because that's exactly what I ordered.)
+
+|Bookworm
+|Bookstore
+|Whether you're actually reading or just retreiving that flask you hid in that hollowed out novel, you're been spending a lot of time around books.
+
+|Brie-yoncé
+|Cheese Shop
+|
+
+|Clippy
+|Salon / Barbershop
+|Is today the day you try something new? Layers? Bangs? Frosted Tips? Mullet? Oh, we dare you! #swarmmullet
+
+|Crafty
+|Arts & Crafts Store
+|Whether you're making a scrapbook of your selfies, knitting some knee warmers, or making a papier-mâché statue of your cat... you'll still be covered in glitter.
+
+|Crushin' It
+|Dive Bar
+|Check in at dive bars to unlock this sticker.
+
+|Curtain Call
+|Theater
+|If all the world's a stage, I wish someone would have told me to put pants on.
+
+|Dark & Swarmy
+|Cocktail Bar
+|
+
+|Do Not Disturb
+|Hotel
+|You don't get high thread count sheets without high germ-count remotes. Now go raid the mini-bar, cause that $12 Snickers never looked so good.
+
+|
+|
+|
+
+
 |===
 
 
 == 奖励贴纸
 
+== 回忆小路
