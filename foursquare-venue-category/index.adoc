@@ -1,0 +1,9 @@
+= Foursquare地点分类列表（中国大陆区域）
+Muir Mok <muirmok@gmail.com>
+:author: Muir Mok
+:imagesdir: images
+:encoding: utf-8
+:lang: zh-CN
+
+您如果想帮助完成本页，请到 https://github.com/muirmok/muirmok.github.io[此处]提交Pull request。
+

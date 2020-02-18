@@ -5,13 +5,11 @@ Muir Mok <muirmok@gmail.com>
 :encoding: utf-8
 :lang: zh-CN
 
-您如果想帮助完成本页，请到 https://github.com/muirmok/muirmok.github.io[此处]提交Pull request。
-
 == 可收集的贴纸
 
 .可收集的贴纸列表
 |===
-|贴纸 |签到分类 |描述 
+|贴纸 |需要签到的分类 |描述 
 
 |1UP
 |Arcade +
@@ -93,14 +91,103 @@ Muir Mok <muirmok@gmail.com>
 |Hotel
 |You don't get high thread count sheets without high germ-count remotes. Now go raid the mini-bar, cause that $12 Snickers never looked so good.
 
+|Dog's Best Friend
+|Pet Store
+|Woof Woof! Might wanna keep this sticker on a short leash, we're not sure it's house trained yet.
+
+|Earl of Sandwich
+|Sandwich Place
 |
+
+|Elle Bow
+|Southern / Soul Food Restaurant
 |
+
+|Famous Ray
+|Pizza Place
+|Yoga Schmoga! You know true balance comes from navigating a perfectly hot slice without burning the roof of your mouth. "Yuuuhhhhmmm"
+
+|Fanatic
+|Stadium
+|Wow, you unlocked a foam finger sticker for free! Nice work, 'cause the same foam finger goes for $49.99 in the team store.
+
+|Flap Jack
+|Diner
+|Is that gum under your plate? Does Flo have syrup in her hairnet again? Who cares, this is diner life. Pancakes n' onion rings, please!
+
+|Foam-o
+|Café
+|I'll have a single-origin, double roast, triple whip, half-caf with sprinkles. Thanks a latte.
+
+|Fried Check-in
+|Fried Chicken Joint
+|Ummmm... we may or may not have tossed this entire chicken straight into the deep fryer. Whoops.
+
+|General Tso
+|Chinese Restaurant
+|Those were some sweet (and sour) check-ins! Now channel your inner General Tso and order an attack on those soup dumplings.
+
+|Groupie
+|Music Venue
+|Wrist stamp? Check. Ear plugs? Check. Laid back foot-tapping-and-head-bobbing-stance? No way! Shoulder your way to the front and get into it!
+
+|Happy Camper
+|Campground
 |
+
+|Herbivore
+|Vegetarian / Vegan Restaurant
+|50 shades of gray? More like 50 shades of green. Kale, sprouts, even swiss chard. Nothing's off-limits in your salad. Except, you know, bacon.
+
+|Hops
+|Brewery
+|
+
+|Hot Tamale
+|Mexican Restaurant
+|
+
+|iScream
+|Ice Cream Shop
+|I scream, you scream, we all scream for - WAIT! STOP EVERYTHING! IS THAT MINT CHOCOLATE CHIP COOKIE DOUGH?!?!?! OMFG!
+
+|Jelly Rowland
+|Donut Shop
+|
+
+|Jetsetter
+|Airport
+|$50 for bags? $25 for legroom? $30 for a pillow?! At least this sticker is free. Now turn off your phone before it takes down this plane.
+
+|Joey Beans
+|Coffee Shop
+|Who cares if your flat white just cost ya $10 bucks. You're getting free wi-fi! Free, extremely slow wi-fi. Drink it up.
+
+|Jon Ham
+|Deli / Bodega
+|Through thick and thin(ly sliced), we think you're all that - and a bag of chips.
+
+|Juice Springsteen
+|Juice Bar
+|Baby we were born to runnnnn (out of money because we keep justifying adding protein powder and extra ginger shots).
+
+|Lappy Toppy
+|Office
+|You're totally not reading BuzzFeed all day. Here's a sticker for being so productive. Now back to that "Which Sticker Are You?" quiz.
+
+|Lay-Z
+|Furniture / Home Store
+|I got 99 problems, but a chair ain't one.
+
+
+
+
+
+
+
 
 
 |===
 
-
 == 奖励贴纸
 
-== 回忆小路
