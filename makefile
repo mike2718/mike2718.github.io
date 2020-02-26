@@ -3,7 +3,7 @@
 date:	touch
 	date --iso-8601=seconds -u -r sitemap.xml
 touch:
-	touch sitemap.xml
+	touch -r index.html sitemap.xml
 xml:
 	xmllint --noout sitemap.xml
 tidy:

@@ -788,17 +788,49 @@ table of contents.</b></p>
 <div class="sect2">
 <h3 id="_ls">ls</h3>
 <div class="paragraph">
-<p>ls用于列出文件。</p>
-</div>
-<div class="paragraph">
-<p>以KB,MB的格式列出文件大小。</p>
+<p>ls用于列出文件</p>
 </div>
 <div class="listingblock">
 <div class="content"><!-- Generator: GNU source-highlight
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>ls -lh 文件名</tt></pre></div>
+<pre><tt>$ ls -lh 文件名</tt></pre></div>
+</div>
+<div class="paragraph">
+<p>以KB、MB的格式列出文件大小</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ln">ln</h3>
+<div class="paragraph">
+<p>创建文件的链接</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>$ ln -sfT 源文件 链接文件</tt></pre></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_rename">rename</h3>
+<div class="paragraph">
+<p>重命名文件</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>$ rename -v <span style=
+"color: #FF0000">'s/.html/.htm/g'</span> <span style=
+"color: #990000">*.</span>html</tt></pre></div>
+</div>
+<div class="paragraph">
+<p><span class="monospaced">-v</span>
+显示详细信息，将所有扩展名为.html的文件重命名为.htm</p>
 </div>
 </div>
 <div class="sect2">
@@ -814,7 +846,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>ls -sh 目录</tt></pre></div>
+<pre><tt>$ ls -sh 目录</tt></pre></div>
 </div>
 <div class="paragraph">
 <p>如果要计算多个目录的总大小，用</p>
@@ -824,9 +856,26 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>ls -sch 目录<span style=
+<pre><tt>$ ls -sch 目录<span style=
 "color: #993399">1</span> 目录<span style=
 "color: #993399">2</span></tt></pre></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_df">df</h3>
+<div class="paragraph">
+<p>计算磁盘剩余空间</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>$ df -h /dev/sda<span style=
+"color: #993399">1</span></tt></pre></div>
+</div>
+<div class="paragraph">
+<p><span class="monospaced">-h</span> 选项用于指定以KB、MB、GB的单位显示。</p>
 </div>
 </div>
 <div class="sect2">
@@ -839,7 +888,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>shutdown -h now</tt></pre></div>
+<pre><tt>$ shutdown -h now</tt></pre></div>
 </div>
 <div class="paragraph">
 <p>立即重新启动</p>
@@ -849,7 +898,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>shutdown -r now</tt></pre></div>
+<pre><tt>$ shutdown -r now</tt></pre></div>
 </div>
 </div>
 </div>
@@ -859,18 +908,64 @@ http://www.gnu.org/software/src-highlite -->
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_genisoimage">genisoimage</h3>
+<div class="paragraph">
+<p>用于创建iso文件，以便刻录光盘。</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_xorriso">xorriso</h3>
+<div class="paragraph">
+<p>将iso文件刻录到光盘。</p>
 </div>
-<div class="sect2">
-<h3 id="_shred">shred</h3>
+<div class="paragraph">
+<p>刻录前，先取消挂载光盘。</p>
+</div>
 <div class="listingblock">
 <div class="content"><!-- Generator: GNU source-highlight
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>shred -uv 要彻底删除的文件</tt></pre></div>
+<pre><tt>$ umount /dev/sr<span style=
+"color: #993399">0</span></tt></pre></div>
+</div>
+<div class="paragraph">
+<p>刻录</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>$ xorriso -as cdrecord -v <span style=
+"color: #009900">dev</span><span style=
+"color: #990000">=</span>/dev/sr<span style=
+"color: #993399">0</span> -speed<span style=
+"color: #990000">=</span><span style=
+"color: #993399">1</span> -dao 要刻录的文件<span style=
+"color: #990000">.</span>iso -eject</tt></pre></div>
+</div>
+<div class="paragraph">
+<p><span class="monospaced">-as cdrecord</span> 指定使用cdrecord命令行选项，
+<span class="monospaced">-speed=1</span> 为一倍速刻录， <span class=
+"monospaced">-dao</span> 为一次性写入， <span class=
+"monospaced">-eject</span> 为刻录完成后弹出光盘。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_shred">shred</h3>
+<div class="paragraph">
+<p>文件粉碎机</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>$ shred -uv 要粉碎的文件</tt></pre></div>
+</div>
+<div class="paragraph">
+<p><span class="monospaced">-u</span> 为粉碎文件， <span class=
+"monospaced">-v</span> 为输出详细信息。 也可以粉碎设备。</p>
 </div>
 </div>
 </div>
@@ -887,6 +982,19 @@ http://www.gnu.org/software/src-highlite -->
 <p><a href=
 "https://github.com/fukuchi/libqrencode">qrencode</a>用于创建二维码。</p>
 </div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>$ qrencode -d <span style=
+"color: #993399">300</span> -o hello<span style=
+"color: #990000">.</span>png <span style=
+"color: #FF0000">"Hello, World"</span></tt></pre></div>
+</div>
+<div class="paragraph">
+<p><span class="monospaced">-d</span> 为指定分辨率。</p>
+</div>
 </div>
 </div>
 </div>
@@ -895,6 +1003,9 @@ http://www.gnu.org/software/src-highlite -->
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_w3m">w3m</h3>
+<div class="paragraph">
+<p>命令行网页浏览器。</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_mutt">mutt</h3>
@@ -902,14 +1013,14 @@ http://www.gnu.org/software/src-highlite -->
 <div class="sect2">
 <h3 id="_whois">whois</h3>
 <div class="paragraph">
-<p>查询域名的WHOIS信息。</p>
+<p>查询域名的whois信息。</p>
 </div>
 <div class="listingblock">
 <div class="content"><!-- Generator: GNU source-highlight
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>whois example<span style=
+<pre><tt>$ whois example<span style=
 "color: #990000">.</span>com</tt></pre></div>
 </div>
 </div>
@@ -928,7 +1039,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>tar -Jcvf 压缩文件<span style=
+<pre><tt>$ tar -Jcvf 压缩文件<span style=
 "color: #990000">.</span>tar<span style=
 "color: #990000">.</span>xz 文件或目录名</tt></pre></div>
 </div>
@@ -940,7 +1051,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>tar -acvf 压缩文件<span style=
+<pre><tt>$ tar -acvf 压缩文件<span style=
 "color: #990000">.</span>tar<span style=
 "color: #990000">.</span>gz 文件或目录名</tt></pre></div>
 </div>
@@ -963,7 +1074,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>ls <span style=
+<pre><tt>$ ls <span style=
 "color: #990000">|</span> cpio -ov <span style=
 "color: #990000">&gt;</span> 归档文件<span style=
 "color: #990000">.</span>cpio</tt></pre></div>
@@ -980,7 +1091,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>cpio -iv <span style=
+<pre><tt>$ cpio -iv <span style=
 "color: #990000">&lt;</span> 归档文件<span style=
 "color: #990000">.</span>cpio</tt></pre></div>
 </div>
@@ -1001,7 +1112,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>lha c 压缩文件<span style=
+<pre><tt>$ lha c 压缩文件<span style=
 "color: #990000">.</span>lzh 文件或目录名</tt></pre></div>
 </div>
 <div class="paragraph">
@@ -1012,8 +1123,21 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>lha x 压缩文件<span style=
+<pre><tt>$ lha x 压缩文件<span style=
 "color: #990000">.</span>lzh</tt></pre></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_upx">upx</h3>
+<div class="paragraph">
+<p>用于压缩可执行文件。可以对Windows的可执行文件和Linux的可执行文件进行压缩。</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>$ upx -f --best 可执行文件名</tt></pre></div>
 </div>
 </div>
 </div>
@@ -1032,7 +1156,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>xvi</tt></pre></div>
+<pre><tt>$ xvi</tt></pre></div>
 </div>
 </div>
 <div class="sect2">
@@ -1046,7 +1170,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>nvi</tt></pre></div>
+<pre><tt>$ nvi</tt></pre></div>
 </div>
 </div>
 <div class="sect2">
@@ -1059,7 +1183,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>unix2dos 要转换的文件</tt></pre></div>
+<pre><tt>$ unix2dos 要转换的文件</tt></pre></div>
 </div>
 </div>
 <div class="sect2">
@@ -1072,7 +1196,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>dos2unix 要转换的文件</tt></pre></div>
+<pre><tt>$ dos2unix 要转换的文件</tt></pre></div>
 </div>
 </div>
 <div class="sect2">
@@ -1086,21 +1210,8 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>tidy HTML文件</tt></pre></div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_csstidy">csstidy</h3>
-<div class="paragraph">
-<p><a href=
-"https://github.com/csstidy-c/csstidy">csstidy</a>用于对CSS文件进行重排。</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>csstidy CSS文件</tt></pre></div>
+<pre><tt>$ tidy 文件<span style=
+"color: #990000">.</span>html</tt></pre></div>
 </div>
 </div>
 </div>
@@ -1115,46 +1226,58 @@ http://www.gnu.org/software/src-highlite -->
 </div>
 <div class="sect1">
 <h2 id="_编译">编译</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_upx">upx</h3>
-<div class="paragraph">
-<p>用于压缩可执行文件。可以对Windows的可执行文件和Linux的可执行文件进行压缩。</p>
-</div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>upx 可执行文件名</tt></pre></div>
-</div>
-</div>
-</div>
+<div class="sectionbody"></div>
 </div>
 <div class="sect1">
-<h2 id="_加密">加密</h2>
+<h2 id="_加密和解密">加密和解密</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_sha1sum">sha1sum</h3>
+<h3 id="_aescrypt">aescrypt</h3>
 <div class="paragraph">
-<p>可以计算文件的摘要（一个长字符串）。由于MD5已经很少使用，推荐至少使用sha1</p>
+<p>加密文件</p>
 </div>
 <div class="listingblock">
 <div class="content"><!-- Generator: GNU source-highlight
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>sha1sum 要计算的文件</tt></pre></div>
+<pre><tt>$ aescrypt -e 要加密的文件</tt></pre></div>
 </div>
+<div class="paragraph">
+<p>解密文件</p>
 </div>
-<div class="sect2">
-<h3 id="_sha256sum">sha256sum</h3>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>$ aescrypt -d 要解密的文件<span style=
+"color: #990000">.</span>aes</tt></pre></div>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_其它">其它</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_par2">par2</h3>
+<div class="paragraph">
+<p>创建文件的恢复卷，用于恢复文件</p>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>$ par2 create -q -n<span style=
+"color: #993399">1</span> -r<span style=
+"color: #993399">5</span> 文件</tt></pre></div>
+</div>
+<div class="paragraph">
+<p>创建5%的单个恢复卷</p>
+</div>
+</div>
 <div class="sect2">
 <h3 id="_bc">bc</h3>
 <div class="paragraph">
@@ -1165,35 +1288,11 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>$ bc
-bc <span style="color: #993399">1.07</span><span style=
-"color: #990000">.</span><span style="color: #993399">1</span>
-Copyright <span style="color: #993399">1991</span>-<span style=
-"color: #993399">1994</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">1997</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">1998</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">2000</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">2004</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">2006</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">2008</span><span style=
-"color: #990000">,</span> <span style=
-"color: #993399">2012</span>-<span style=
-"color: #993399">2017</span> Free Software Foundation<span style=
-"color: #990000">,</span> Inc<span style="color: #990000">.</span>
-This is free software with ABSOLUTELY NO WARRANTY<span style=
-"color: #990000">.</span>
-For details <span style="font-weight: bold"><span style=
-"color: #0000FF">type</span></span> `warranty<span style=
-"color: #FF0000">'.</span>
-<span style="color: #FF0000">23+17</span>
-<span style="color: #FF0000">40</span>
-<span style="color: #FF0000">quit</span></tt></pre></div>
+<pre><tt>$ bc -q
+<span style="color: #993399">23</span><span style=
+"color: #990000">+</span><span style="color: #993399">17</span>
+<span style="color: #993399">40</span>
+quit</tt></pre></div>
 </div>
 </div>
 </div>
@@ -1202,7 +1301,7 @@ For details <span style="font-weight: bold"><span style=
 <div id="footnotes">
 <hr></div>
 <div id="footer">
-<div id="footer-text">更新时间 2020-02-15 03:24:37 CST</div>
+<div id="footer-text">更新时间 2020-02-27 01:06:37 CST</div>
 </div>
 </body>
 </html>
