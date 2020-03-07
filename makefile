@@ -1,4 +1,4 @@
-﻿all:	gitadd
+all:	gitadd
 
 date:	touch
 	date --iso-8601=seconds -u -r sitemap.xml

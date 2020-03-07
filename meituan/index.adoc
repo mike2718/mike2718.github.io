@@ -1,0 +1,9 @@
+= 美团众包教程
+Muir Mok <muirmok@gmail.com>
+:author: Muir Mok
+:imagesdir: images
+:encoding: utf-8
+:lang: zh-CN
+
+== ce
+
