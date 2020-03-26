@@ -1,8 +1,7 @@
 = 心夜:静电茧游戏攻略
-Muir Mok <muirmok@gmail.com>
-:author: Muir Mok
+Mike Akiba <mike2718@gmail.com>
+:author: Mike Akiba
 :toc:
-:toc-title: 目录
 :imagesdir: images
 :encoding: utf-8
 

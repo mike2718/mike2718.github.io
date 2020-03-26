@@ -6,6 +6,6 @@ all:
 tidy:
 	tidy -utf8 -m index.html
 gitadd:
-	git add *.adoc *.html makefile README.md
+	git add *.adoc *.html makefile
 gitpush:
 	git push -u origin master

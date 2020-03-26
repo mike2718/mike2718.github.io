@@ -1,6 +1,6 @@
 = 杀戮的天使游戏攻略
-Muir Mok <muirmok@gmail.com>
-:author: Muir Mok
+Mike Akiba <mike2718@gmail.com>
+:author: Mike Akiba
 :lang: zh-CN
 :imagesdir: images
 :encoding: utf-8
