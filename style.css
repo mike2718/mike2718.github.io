@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  font: 400 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
+  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -157,7 +157,7 @@ img {
 }
 
 p {
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
   font-size: 16px;
   color: #24292e; }
@@ -185,3 +185,4 @@ h1, h2, h3 {
   border-bottom: 1px solid #eaecef;
   color: #111;
   /* Darker */ }
+
