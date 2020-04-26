@@ -1,0 +1,311 @@
+= 目录 =
+        - [[#Linux命令行工具|Linux命令行工具]]
+                - [[#Linux命令行工具#系统|系统]]
+                        - [[#Linux命令行工具#系统#ls|ls]]
+                        - [[#Linux命令行工具#系统#ln|ln]]
+                        - [[#Linux命令行工具#系统#rename|rename]]
+                        - [[#Linux命令行工具#系统#du|du]]
+                        - [[#Linux命令行工具#系统#df|df]]
+                        - [[#Linux命令行工具#系统#shutdown|shutdown]]
+                - [[#Linux命令行工具#媒体|媒体]]
+                        - [[#Linux命令行工具#媒体#genisoimage|genisoimage]]
+                        - [[#Linux命令行工具#媒体#xorriso|xorriso]]
+                        - [[#Linux命令行工具#媒体#shred|shred]]
+                - [[#Linux命令行工具#图像|图像]]
+                        - [[#Linux命令行工具#图像#display|display]]
+                        - [[#Linux命令行工具#图像#qrencode|qrencode]]
+                - [[#Linux命令行工具#网络|网络]]
+                        - [[#Linux命令行工具#网络#w3m|w3m]]
+                        - [[#Linux命令行工具#网络#whois|whois]]
+                - [[#Linux命令行工具#归档和压缩|归档和压缩]]
+                        - [[#Linux命令行工具#归档和压缩#tar|tar]]
+                        - [[#Linux命令行工具#归档和压缩#cpio|cpio]]
+                        - [[#Linux命令行工具#归档和压缩#lha|lha]]
+                        - [[#Linux命令行工具#归档和压缩#upx|upx]]
+                - [[#Linux命令行工具#处理文本|处理文本]]
+                        - [[#Linux命令行工具#处理文本#unix2dos|unix2dos]]
+                        - [[#Linux命令行工具#处理文本#dos2unix|dos2unix]]
+                        - [[#Linux命令行工具#处理文本#tidy|tidy]]
+                - [[#Linux命令行工具#搜索文件|搜索文件]]
+                - [[#Linux命令行工具#打印|打印]]
+                - [[#Linux命令行工具#编译|编译]]
+                - [[#Linux命令行工具#加密和解密|加密和解密]]
+                        - [[#Linux命令行工具#加密和解密#aescrypt|aescrypt]]
+                - [[#Linux命令行工具#其它|其它]]
+                        - [[#Linux命令行工具#其它#par2|par2]]
+                        - [[#Linux命令行工具#其它#bc|bc]]
+
+= Linux命令行工具 =
+%title Mike的工作室
+
+== 系统 ==
+
+=== ls ===
+
+ls用于列出文件
+
+{{{
+$ ls -lh 文件名
+}}}
+
+以KB、MB的格式列出文件大小
+
+=== ln ===
+
+创建文件的链接
+
+{{{
+$ ln -sfT 源文件 链接文件
+}}}
+
+=== rename ===
+
+重命名文件
+
+{{{
+$ rename -v 's/.html/.htm/g' *.html
+}}}
+
+`-v` 显示详细信息，将所有扩展名为.html的文件重命名为.htm
+
+=== du ===
+
+du用于显示文件占用的空间。
+
+显示一个目录的总大小，用
+
+{{{
+$ ls -sh 目录
+}}}
+
+如果要计算多个目录的总大小，用
+
+{{{
+$ ls -sch 目录1 目录2
+}}}
+
+=== df ===
+
+计算磁盘剩余空间
+
+{{{
+$ df -h /dev/sda1
+}}}
+
+`-h` 选项用于指定以KB、MB、GB的单位显示。
+
+=== shutdown ===
+
+立即关机
+
+{{{
+$ shutdown -h now
+}}}
+
+立即重新启动
+
+{{{
+$ shutdown -r now
+}}}
+
+== 媒体 ==
+
+=== genisoimage ===
+
+用于创建iso文件，以便刻录光盘。
+
+=== xorriso ===
+
+将iso文件刻录到光盘。
+
+刻录前，先取消挂载光盘。
+
+{{{
+$ umount /dev/sr0
+}}}
+
+刻录
+
+{{{
+$ xorriso -as cdrecord -v dev=/dev/sr0 -speed=1 -dao 要刻录的文件.iso -eject
+}}}
+
+`-as cdrecord` 指定使用cdrecord命令行选项， `-speed=1` 为一倍速刻录， `-dao` 为一次性写入， `-eject` 为刻录完成后弹出光盘。
+
+=== shred ===
+
+文件粉碎机
+
+{{{
+$ shred -uv 要粉碎的文件
+}}}
+
+`-u` 为粉碎文件， `-v` 为输出详细信息。
+也可以粉碎设备。
+
+== 图像 ==
+
+=== display ===
+
+=== qrencode ===
+
+[[https://github.com/fukuchi/libqrencode|qrencode]]用于创建二维码。
+
+{{{
+$ qrencode -d 300 -o hello.png "Hello, World"
+}}}
+
+`-d` 为指定分辨率。
+
+== 网络 ==
+
+=== w3m ===
+
+命令行网页浏览器。
+
+=== whois ===
+
+查询域名的whois信息。
+
+{{{
+$ whois example.com
+}}}
+
+== 归档和压缩 ==
+
+=== tar ===
+
+创建 `.xz` 归档压缩文件
+
+{{{
+$ tar -Jcvf 压缩文件.tar.xz 文件或目录名
+}}}
+
+`-a` 选项会根据给出的压缩文件扩展名，自动判断并压缩
+
+{{{
+$ tar -acvf 压缩文件.tar.gz 文件或目录名
+}}}
+
+因为给出了 `.gz` 的扩展名，自动使用gzip压缩
+
+=== cpio ===
+
+主要用于备份和打包文件。只能接受 `ls` 等命令和管道传递的文件名列表。
+
+将当前目录下的所有文件创建为一个名为 `归档文件.cpio` 的归档
+
+{{{
+$ ls | cpio -ov > 归档文件.cpio
+}}}
+
+`-c` 选项用于创建新文件， `-v` 用于列出详细信息。
+
+在当前目录下解开归档
+
+{{{
+$ cpio -iv < 归档文件.cpio
+}}}
+
+=== lha ===
+
+https://github.com/jca02266/lha[lha]为DOS时代在日本广泛使用的压缩格式，文件扩展名为 `.lha` 或者 `.lzh`
+
+创建 `.lzh` 压缩文件
+
+{{{
+$ lha c 压缩文件.lzh 文件或目录名
+}}}
+
+解压缩 `.lzh` 文件
+
+{{{
+$ lha x 压缩文件.lzh
+}}}
+
+=== upx ===
+
+用于压缩可执行文件。可以对Windows的可执行文件和Linux的可执行文件进行压缩。
+
+{{{
+$ upx -f --best 可执行文件名
+}}}
+
+== 处理文本 ==
+
+[[https://github.com/martinwguy/xvi|xvi]]是一个vi编辑器。
+可惜在中文Ubuntu系统上无法显示汉字。
+
+{{{
+$ xvi
+}}}
+
+=== unix2dos ===
+
+用于把类Unix系统的文件转换为Windows的文件。用于转换文本文件。
+
+{{{
+$ unix2dos 要转换的文件
+}}}
+
+=== dos2unix ===
+
+用于把Windows的文件转换为类Unix系统的文件。用于转换文本文件。
+
+{{{
+$ dos2unix 要转换的文件
+}}}
+
+=== tidy ===
+
+[[https://github.com/htacg/tidy-html5|tidy]]用于对HTML文件进行重排。
+
+{{{
+$ tidy 文件.html
+}}}
+
+== 搜索文件 ==
+
+
+== 打印 ==
+
+== 编译 ==
+
+== 加密和解密 ==
+
+=== aescrypt ===
+
+加密文件
+
+{{{
+$ aescrypt -e 要加密的文件
+}}}
+
+解密文件
+
+{{{
+$ aescrypt -d 要解密的文件.aes
+}}}
+
+== 其它 ==
+
+=== par2 ===
+
+创建文件的恢复卷，用于恢复文件
+
+{{{
+$ par2 create -q -n1 -r5 文件
+}}}
+
+创建5%的单个恢复卷
+
+=== bc ===
+
+用于简单数学计算。
+
+{{{
+$ bc -q
+23+17
+40
+quit
+}}}

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="Stylesheet" type="text/css" href="css/style.css">
+<title>Mike的工作室</title>
+<meta charset="UTF-8">
+<meta name="description" content="Mike Akiba的个人网站">
+<meta name="author" content="Mike Akiba">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script data-ad-client="ca-pub-5897293653782166" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+<!-- Vimwiki内容替换开始 -->
+<div id="content">
+
+<div id="目录" class="toc"><h1 id="目录">目录</a></h1></div>
+<ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具">Linux命令行工具</a>
+
+<ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-系统">系统</a>
+
+<ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-系统-ls">ls</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-系统-ln">ln</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-系统-rename">rename</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-系统-du">du</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-系统-df">df</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-系统-shutdown">shutdown</a>
+
+</ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-媒体">媒体</a>
+
+<ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-媒体-genisoimage">genisoimage</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-媒体-xorriso">xorriso</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-媒体-shred">shred</a>
+
+</ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-图像">图像</a>
+
+<ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-图像-display">display</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-图像-qrencode">qrencode</a>
+
+</ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-网络">网络</a>
+
+<ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-网络-w3m">w3m</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-网络-whois">whois</a>
+
+</ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-归档和压缩">归档和压缩</a>
+
+<ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-归档和压缩-tar">tar</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-归档和压缩-cpio">cpio</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-归档和压缩-lha">lha</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-归档和压缩-upx">upx</a>
+
+</ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-处理文本">处理文本</a>
+
+<ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-处理文本-unix2dos">unix2dos</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-处理文本-dos2unix">dos2unix</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-处理文本-tidy">tidy</a>
+
+</ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-搜索文件">搜索文件</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-打印">打印</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-编译">编译</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-加密和解密">加密和解密</a>
+
+<ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-加密和解密-aescrypt">aescrypt</a>
+
+</ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-其它">其它</a>
+
+<ul>
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-其它-par2">par2</a>
+
+<li>
+<a href="Linux命令行工具.html#Linux命令行工具-其它-bc">bc</a>
+
+</ul>
+</ul>
+</ul>
+
+<div id="Linux命令行工具"><h1 id="Linux命令行工具" class="header"><a href="#Linux命令行工具">Linux命令行工具</a></h1></div>
+
+<div id="Linux命令行工具-系统"><h2 id="系统" class="header"><a href="#Linux命令行工具-系统">系统</a></h2></div>
+
+<div id="Linux命令行工具-系统-ls"><h3 id="ls" class="header"><a href="#Linux命令行工具-系统-ls">ls</a></h3></div>
+
+<p>
+ls用于列出文件
+</p>
+
+<pre>
+$ ls -lh 文件名
+</pre>
+
+<p>
+以KB、MB的格式列出文件大小
+</p>
+
+<div id="Linux命令行工具-系统-ln"><h3 id="ln" class="header"><a href="#Linux命令行工具-系统-ln">ln</a></h3></div>
+
+<p>
+创建文件的链接
+</p>
+
+<pre>
+$ ln -sfT 源文件 链接文件
+</pre>
+
+<div id="Linux命令行工具-系统-rename"><h3 id="rename" class="header"><a href="#Linux命令行工具-系统-rename">rename</a></h3></div>
+
+<p>
+重命名文件
+</p>
+
+<pre>
+$ rename -v 's/.html/.htm/g' *.html
+</pre>
+
+<p>
+<code>-v</code> 显示详细信息，将所有扩展名为.html的文件重命名为.htm
+</p>
+
+<div id="Linux命令行工具-系统-du"><h3 id="du" class="header"><a href="#Linux命令行工具-系统-du">du</a></h3></div>
+
+<p>
+du用于显示文件占用的空间。
+</p>
+
+<p>
+显示一个目录的总大小，用
+</p>
+
+<pre>
+$ ls -sh 目录
+</pre>
+
+<p>
+如果要计算多个目录的总大小，用
+</p>
+
+<pre>
+$ ls -sch 目录1 目录2
+</pre>
+
+<div id="Linux命令行工具-系统-df"><h3 id="df" class="header"><a href="#Linux命令行工具-系统-df">df</a></h3></div>
+
+<p>
+计算磁盘剩余空间
+</p>
+
+<pre>
+$ df -h /dev/sda1
+</pre>
+
+<p>
+<code>-h</code> 选项用于指定以KB、MB、GB的单位显示。
+</p>
+
+<div id="Linux命令行工具-系统-shutdown"><h3 id="shutdown" class="header"><a href="#Linux命令行工具-系统-shutdown">shutdown</a></h3></div>
+
+<p>
+立即关机
+</p>
+
+<pre>
+$ shutdown -h now
+</pre>
+
+<p>
+立即重新启动
+</p>
+
+<pre>
+$ shutdown -r now
+</pre>
+
+<div id="Linux命令行工具-媒体"><h2 id="媒体" class="header"><a href="#Linux命令行工具-媒体">媒体</a></h2></div>
+
+<div id="Linux命令行工具-媒体-genisoimage"><h3 id="genisoimage" class="header"><a href="#Linux命令行工具-媒体-genisoimage">genisoimage</a></h3></div>
+
+<p>
+用于创建iso文件，以便刻录光盘。
+</p>
+
+<div id="Linux命令行工具-媒体-xorriso"><h3 id="xorriso" class="header"><a href="#Linux命令行工具-媒体-xorriso">xorriso</a></h3></div>
+
+<p>
+将iso文件刻录到光盘。
+</p>
+
+<p>
+刻录前，先取消挂载光盘。
+</p>
+
+<pre>
+$ umount /dev/sr0
+</pre>
+
+<p>
+刻录
+</p>
+
+<pre>
+$ xorriso -as cdrecord -v dev=/dev/sr0 -speed=1 -dao 要刻录的文件.iso -eject
+</pre>
+
+<p>
+<code>-as cdrecord</code> 指定使用cdrecord命令行选项， <code>-speed=1</code> 为一倍速刻录， <code>-dao</code> 为一次性写入， <code>-eject</code> 为刻录完成后弹出光盘。
+</p>
+
+<div id="Linux命令行工具-媒体-shred"><h3 id="shred" class="header"><a href="#Linux命令行工具-媒体-shred">shred</a></h3></div>
+
+<p>
+文件粉碎机
+</p>
+
+<pre>
+$ shred -uv 要粉碎的文件
+</pre>
+
+<p>
+<code>-u</code> 为粉碎文件， <code>-v</code> 为输出详细信息。
+也可以粉碎设备。
+</p>
+
+<div id="Linux命令行工具-图像"><h2 id="图像" class="header"><a href="#Linux命令行工具-图像">图像</a></h2></div>
+
+<div id="Linux命令行工具-图像-display"><h3 id="display" class="header"><a href="#Linux命令行工具-图像-display">display</a></h3></div>
+
+<div id="Linux命令行工具-图像-qrencode"><h3 id="qrencode" class="header"><a href="#Linux命令行工具-图像-qrencode">qrencode</a></h3></div>
+
+<p>
+<a href="https://github.com/fukuchi/libqrencode">qrencode</a>用于创建二维码。
+</p>
+
+<pre>
+$ qrencode -d 300 -o hello.png "Hello, World"
+</pre>
+
+<p>
+<code>-d</code> 为指定分辨率。
+</p>
+
+<div id="Linux命令行工具-网络"><h2 id="网络" class="header"><a href="#Linux命令行工具-网络">网络</a></h2></div>
+
+<div id="Linux命令行工具-网络-w3m"><h3 id="w3m" class="header"><a href="#Linux命令行工具-网络-w3m">w3m</a></h3></div>
+
+<p>
+命令行网页浏览器。
+</p>
+
+<div id="Linux命令行工具-网络-whois"><h3 id="whois" class="header"><a href="#Linux命令行工具-网络-whois">whois</a></h3></div>
+
+<p>
+查询域名的whois信息。
+</p>
+
+<pre>
+$ whois example.com
+</pre>
+
+<div id="Linux命令行工具-归档和压缩"><h2 id="归档和压缩" class="header"><a href="#Linux命令行工具-归档和压缩">归档和压缩</a></h2></div>
+
+<div id="Linux命令行工具-归档和压缩-tar"><h3 id="tar" class="header"><a href="#Linux命令行工具-归档和压缩-tar">tar</a></h3></div>
+
+<p>
+创建 <code>.xz</code> 归档压缩文件
+</p>
+
+<pre>
+$ tar -Jcvf 压缩文件.tar.xz 文件或目录名
+</pre>
+
+<p>
+<code>-a</code> 选项会根据给出的压缩文件扩展名，自动判断并压缩
+</p>
+
+<pre>
+$ tar -acvf 压缩文件.tar.gz 文件或目录名
+</pre>
+
+<p>
+因为给出了 <code>.gz</code> 的扩展名，自动使用gzip压缩
+</p>
+
+<div id="Linux命令行工具-归档和压缩-cpio"><h3 id="cpio" class="header"><a href="#Linux命令行工具-归档和压缩-cpio">cpio</a></h3></div>
+
+<p>
+主要用于备份和打包文件。只能接受 <code>ls</code> 等命令和管道传递的文件名列表。
+</p>
+
+<p>
+将当前目录下的所有文件创建为一个名为 <code>归档文件.cpio</code> 的归档
+</p>
+
+<pre>
+$ ls | cpio -ov &gt; 归档文件.cpio
+</pre>
+
+<p>
+<code>-c</code> 选项用于创建新文件， <code>-v</code> 用于列出详细信息。
+</p>
+
+<p>
+在当前目录下解开归档
+</p>
+
+<pre>
+$ cpio -iv &lt; 归档文件.cpio
+</pre>
+
+<div id="Linux命令行工具-归档和压缩-lha"><h3 id="lha" class="header"><a href="#Linux命令行工具-归档和压缩-lha">lha</a></h3></div>
+
+<p>
+<a href="https://github.com/jca02266/lha[lha]为DOS时代在日本广泛使用的压缩格式，文件扩展名为">https://github.com/jca02266/lha[lha]为DOS时代在日本广泛使用的压缩格式，文件扩展名为</a> <code>.lha</code> 或者 <code>.lzh</code>
+</p>
+
+<p>
+创建 <code>.lzh</code> 压缩文件
+</p>
+
+<pre>
+$ lha c 压缩文件.lzh 文件或目录名
+</pre>
+
+<p>
+解压缩 <code>.lzh</code> 文件
+</p>
+
+<pre>
+$ lha x 压缩文件.lzh
+</pre>
+
+<div id="Linux命令行工具-归档和压缩-upx"><h3 id="upx" class="header"><a href="#Linux命令行工具-归档和压缩-upx">upx</a></h3></div>
+
+<p>
+用于压缩可执行文件。可以对Windows的可执行文件和Linux的可执行文件进行压缩。
+</p>
+
+<pre>
+$ upx -f --best 可执行文件名
+</pre>
+
+<div id="Linux命令行工具-处理文本"><h2 id="处理文本" class="header"><a href="#Linux命令行工具-处理文本">处理文本</a></h2></div>
+
+<p>
+<a href="https://github.com/martinwguy/xvi">xvi</a>是一个vi编辑器。
+可惜在中文Ubuntu系统上无法显示汉字。
+</p>
+
+<pre>
+$ xvi
+</pre>
+
+<div id="Linux命令行工具-处理文本-unix2dos"><h3 id="unix2dos" class="header"><a href="#Linux命令行工具-处理文本-unix2dos">unix2dos</a></h3></div>
+
+<p>
+用于把类Unix系统的文件转换为Windows的文件。用于转换文本文件。
+</p>
+
+<pre>
+$ unix2dos 要转换的文件
+</pre>
+
+<div id="Linux命令行工具-处理文本-dos2unix"><h3 id="dos2unix" class="header"><a href="#Linux命令行工具-处理文本-dos2unix">dos2unix</a></h3></div>
+
+<p>
+用于把Windows的文件转换为类Unix系统的文件。用于转换文本文件。
+</p>
+
+<pre>
+$ dos2unix 要转换的文件
+</pre>
+
+<div id="Linux命令行工具-处理文本-tidy"><h3 id="tidy" class="header"><a href="#Linux命令行工具-处理文本-tidy">tidy</a></h3></div>
+
+<p>
+<a href="https://github.com/htacg/tidy-html5">tidy</a>用于对HTML文件进行重排。
+</p>
+
+<pre>
+$ tidy 文件.html
+</pre>
+
+<div id="Linux命令行工具-搜索文件"><h2 id="搜索文件" class="header"><a href="#Linux命令行工具-搜索文件">搜索文件</a></h2></div>
+
+
+<div id="Linux命令行工具-打印"><h2 id="打印" class="header"><a href="#Linux命令行工具-打印">打印</a></h2></div>
+
+<div id="Linux命令行工具-编译"><h2 id="编译" class="header"><a href="#Linux命令行工具-编译">编译</a></h2></div>
+
+<div id="Linux命令行工具-加密和解密"><h2 id="加密和解密" class="header"><a href="#Linux命令行工具-加密和解密">加密和解密</a></h2></div>
+
+<div id="Linux命令行工具-加密和解密-aescrypt"><h3 id="aescrypt" class="header"><a href="#Linux命令行工具-加密和解密-aescrypt">aescrypt</a></h3></div>
+
+<p>
+加密文件
+</p>
+
+<pre>
+$ aescrypt -e 要加密的文件
+</pre>
+
+<p>
+解密文件
+</p>
+
+<pre>
+$ aescrypt -d 要解密的文件.aes
+</pre>
+
+<div id="Linux命令行工具-其它"><h2 id="其它" class="header"><a href="#Linux命令行工具-其它">其它</a></h2></div>
+
+<div id="Linux命令行工具-其它-par2"><h3 id="par2" class="header"><a href="#Linux命令行工具-其它-par2">par2</a></h3></div>
+
+<p>
+创建文件的恢复卷，用于恢复文件
+</p>
+
+<pre>
+$ par2 create -q -n1 -r5 文件
+</pre>
+
+<p>
+创建5%的单个恢复卷
+</p>
+
+<div id="Linux命令行工具-其它-bc"><h3 id="bc" class="header"><a href="#Linux命令行工具-其它-bc">bc</a></h3></div>
+
+<p>
+用于简单数学计算。
+</p>
+
+<pre>
+$ bc -q
+23+17
+40
+quit
+</pre>
+
+</div>
+<!-- Vimwiki内容替换结束 -->
+<footer>
+<small>&copy; 2020 Mike Akiba&semi; 更新于&colon; 2020-04-26</small>
+</footer>
+</body>
+</html>
