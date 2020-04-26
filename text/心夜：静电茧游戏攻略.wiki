@@ -1,8 +1,7 @@
 = 心夜：静电茧游戏攻略 =
 %title Mike的个人网站
 
-本攻略以[[https://store.steampowered.com/app/923910/Eve_of_Souls_Static_Pod/|Steam V0.65.5]]版为准。 与剧情有关的地方请用鼠标选择空白的地方就能看到。
-
+本攻略以[[https://store.steampowered.com/app/923910/Eve_of_Souls_Static_Pod/|Steam V0.65.5版]]为准。 
 == 操作方法 ==
 | 按键 | 效果       |
 |------|------------|

@@ -4,13 +4,9 @@ body {
 	font: 400 16px/1.5 "Microsoft YaHei", "微软雅黑", sans-serif;
 	color: #111111;
 	background-color: #fdfdfd;
-	-webkit-text-size-adjust: 100%;
-	-webkit-font-feature-settings: "kern" 1;
-	-moz-font-feature-settings: "kern" 1;
-	-o-font-feature-settings: "kern" 1;
-	font-feature-settings: "kern" 1;
-	font-kerning: normal;
-	padding: 30px;
+	margin: 1em 2em 1em 2em;
+	font-size: 100%;
+	line-height: 130%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -127,7 +123,6 @@ blockquote * {
 table {
 	border-spacing: 2px;
 	display: block;
-	font-size: 14px;
 	overflow: auto;
 	width: 100%;
 	margin-bottom: 16px;
@@ -141,7 +136,7 @@ td {
 }
 
 th {
-	font-weight: 600;
+	font-weight: bold;
 	padding: 6px 13px;
 	border: 1px solid #dfe2e5;
 }
@@ -165,15 +160,13 @@ img {
 }
 
 p {
-	line-height: 1.8em;
-	font-weight: 400;
-	font-size: 16px;
+	line-height: 1.6em;
 	color: #24292e;
-	margin: 0.5em 0 0.5em;
+	margin: 1em 0 1em;
 }
 
 strong {
-	font-weight: 600;
+	font-weight: bold;
 }
 
 ul {
@@ -198,37 +191,43 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 600;
-	margin: 0.6em 0 0.6em;
+	font-weight: bold;
+	line-height:150%;
+	margin: 1em 0 0.3em;
 }
 
 h1,
 h2,
 h3 {
 	border-bottom: 1px solid #eaecef;
-	color: #111;
 }
 
 h1 {
-	font-size: 1.9em;
+	font-size: 2em;
+	color: #111111;
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.8em;
+	color: #404040;
 }
 
 h3 {
-	font-size: 1.4em;
+	font-size: 1.6em;
+	color: #707070;
 }
 
 h4 {
-	font-size: 1.3em;
+	font-size: 1.4em;
+	color: #909090;
 }
 
 h5 {
-	font-size: 1.2em;
+	font-size: 1.3em;
+	color: #989898;
 }
 
 h6 {
-	font-size: 1.1em;
+	font-size: 1.2em;
+	color: #9c9c9c;
 }
