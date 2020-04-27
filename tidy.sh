@@ -1,3 +1,5 @@
+cd text && for f in *.wiki ; do vim -c ':Vimwiki2HTML' -c ':q!' "$f" ; done && cd ..
+
 tidy -utf8 -m 404.html Chrome浏览器快捷键.html \
 	index.html Linux命令行工具.html \
 	Swarm贴纸攻略.html 杀戮的天使游戏攻略.html \

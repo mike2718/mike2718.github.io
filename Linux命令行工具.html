@@ -16,38 +16,38 @@
 <body>
 <!-- Vimwiki内容替换开始 -->
 <div id="content">
-<header>
-<h1 class="header">Linux命令行工具</h1>
-</header>
-<header>
-<h2 class="header">系统</h2>
-</header>
-<header>
-<h3 class="header">ls</h3>
-</header>
+<div class="header">
+<h1>Linux命令行工具</h1>
+</div>
+<div class="header">
+<h2>系统</h2>
+</div>
+<div class="header">
+<h3>ls</h3>
+</div>
 <p>ls用于列出文件</p>
 <pre>
 $ ls -lh 文件名
 </pre>
 <p>以KB、MB的格式列出文件大小</p>
-<header>
-<h3 class="header">ln</h3>
-</header>
+<div class="header">
+<h3>ln</h3>
+</div>
 <p>创建文件的链接</p>
 <pre>
 $ ln -sfT 源文件 链接文件
 </pre>
-<header>
-<h3 class="header">rename</h3>
-</header>
+<div class="header">
+<h3>rename</h3>
+</div>
 <p>重命名文件</p>
 <pre>
 $ rename -v 's/.html/.htm/g' *.html
 </pre>
 <p><code>-v</code> 显示详细信息，将所有扩展名为.html的文件重命名为.htm</p>
-<header>
-<h3 class="header">du</h3>
-</header>
+<div class="header">
+<h3>du</h3>
+</div>
 <p>du用于显示文件占用的空间。</p>
 <p>显示一个目录的总大小，用</p>
 <pre>
@@ -57,17 +57,17 @@ $ ls -sh 目录
 <pre>
 $ ls -sch 目录1 目录2
 </pre>
-<header>
-<h3 class="header">df</h3>
-</header>
+<div class="header">
+<h3>df</h3>
+</div>
 <p>计算磁盘剩余空间</p>
 <pre>
 $ df -h /dev/sda1
 </pre>
 <p><code>-h</code> 选项用于指定以KB、MB、GB的单位显示。</p>
-<header>
-<h3 class="header">shutdown</h3>
-</header>
+<div class="header">
+<h3>shutdown</h3>
+</div>
 <p>立即关机</p>
 <pre>
 $ shutdown -h now
@@ -76,16 +76,16 @@ $ shutdown -h now
 <pre>
 $ shutdown -r now
 </pre>
-<header>
-<h2 class="header">媒体</h2>
-</header>
-<header>
-<h3 class="header">genisoimage</h3>
-</header>
+<div class="header">
+<h2>媒体</h2>
+</div>
+<div class="header">
+<h3>genisoimage</h3>
+</div>
 <p>用于创建iso文件，以便刻录光盘。</p>
-<header>
-<h3 class="header">xorriso</h3>
-</header>
+<div class="header">
+<h3>xorriso</h3>
+</div>
 <p>将iso文件刻录到光盘。</p>
 <p>刻录前，先取消挂载光盘。</p>
 <pre>
@@ -98,49 +98,49 @@ $ xorriso -as cdrecord -v dev=/dev/sr0 -speed=1 -dao 要刻录的文件.iso -eje
 <p><code>-as cdrecord</code> 指定使用cdrecord命令行选项，
 <code>-speed=1</code> 为一倍速刻录， <code>-dao</code> 为一次性写入，
 <code>-eject</code> 为刻录完成后弹出光盘。</p>
-<header>
-<h3 class="header">shred</h3>
-</header>
+<div class="header">
+<h3>shred</h3>
+</div>
 <p>文件粉碎机</p>
 <pre>
 $ shred -uv 要粉碎的文件
 </pre>
 <p><code>-u</code> 为粉碎文件， <code>-v</code> 为输出详细信息。 也可以粉碎设备。</p>
-<header>
-<h2 class="header">图像</h2>
-</header>
-<header>
-<h3 class="header">display</h3>
-</header>
-<header>
-<h3 class="header">qrencode</h3>
-</header>
+<div class="header">
+<h2>图像</h2>
+</div>
+<div class="header">
+<h3>display</h3>
+</div>
+<div class="header">
+<h3>qrencode</h3>
+</div>
 <p><a href=
 "https://github.com/fukuchi/libqrencode">qrencode</a>用于创建二维码。</p>
 <pre>
 $ qrencode -d 300 -o hello.png "Hello, World"
 </pre>
 <p><code>-d</code> 为指定分辨率。</p>
-<header>
-<h2 class="header">网络</h2>
-</header>
-<header>
-<h3 class="header">w3m</h3>
-</header>
+<div class="header">
+<h2>网络</h2>
+</div>
+<div class="header">
+<h3>w3m</h3>
+</div>
 <p>命令行网页浏览器。</p>
-<header>
-<h3 class="header">whois</h3>
-</header>
+<div class="header">
+<h3>whois</h3>
+</div>
 <p>查询域名的whois信息。</p>
 <pre>
 $ whois example.com
 </pre>
-<header>
-<h2 class="header">归档和压缩</h2>
-</header>
-<header>
-<h3 class="header">tar</h3>
-</header>
+<div class="header">
+<h2>归档和压缩</h2>
+</div>
+<div class="header">
+<h3>tar</h3>
+</div>
 <p>创建 <code>.xz</code> 归档压缩文件</p>
 <pre>
 $ tar -Jcvf 压缩文件.tar.xz 文件或目录名
@@ -150,9 +150,9 @@ $ tar -Jcvf 压缩文件.tar.xz 文件或目录名
 $ tar -acvf 压缩文件.tar.gz 文件或目录名
 </pre>
 <p>因为给出了 <code>.gz</code> 的扩展名，自动使用gzip压缩</p>
-<header>
-<h3 class="header">cpio</h3>
-</header>
+<div class="header">
+<h3>cpio</h3>
+</div>
 <p>主要用于备份和打包文件。只能接受 <code>ls</code> 等命令和管道传递的文件名列表。</p>
 <p>将当前目录下的所有文件创建为一个名为 <code>归档文件.cpio</code> 的归档</p>
 <pre>
@@ -163,9 +163,9 @@ $ ls | cpio -ov &gt; 归档文件.cpio
 <pre>
 $ cpio -iv &lt; 归档文件.cpio
 </pre>
-<header>
-<h3 class="header">lha</h3>
-</header>
+<div class="header">
+<h3>lha</h3>
+</div>
 <p><a href=
 "https://github.com/jca02266/lha[lha]%E4%B8%BADOS%E6%97%B6%E4%BB%A3%E5%9C%A8%E6%97%A5%E6%9C%AC%E5%B9%BF%E6%B3%9B%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8E%8B%E7%BC%A9%E6%A0%BC%E5%BC%8F%EF%BC%8C%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D%E4%B8%BA">
 https://github.com/jca02266/lha[lha]为DOS时代在日本广泛使用的压缩格式，文件扩展名为</a>
@@ -178,58 +178,58 @@ $ lha c 压缩文件.lzh 文件或目录名
 <pre>
 $ lha x 压缩文件.lzh
 </pre>
-<header>
-<h3 class="header">upx</h3>
-</header>
+<div class="header">
+<h3>upx</h3>
+</div>
 <p>用于压缩可执行文件。可以对Windows的可执行文件和Linux的可执行文件进行压缩。</p>
 <pre>
 $ upx -f --best 可执行文件名
 </pre>
-<header>
-<h2 class="header">处理文本</h2>
-</header>
+<div class="header">
+<h2>处理文本</h2>
+</div>
 <p><a href="https://github.com/martinwguy/xvi">xvi</a>是一个vi编辑器。
 可惜在中文Ubuntu系统上无法显示汉字。</p>
 <pre>
 $ xvi
 </pre>
-<header>
-<h3 class="header">unix2dos</h3>
-</header>
+<div class="header">
+<h3>unix2dos</h3>
+</div>
 <p>用于把类Unix系统的文件转换为Windows的文件。用于转换文本文件。</p>
 <pre>
 $ unix2dos 要转换的文件
 </pre>
-<header>
-<h3 class="header">dos2unix</h3>
-</header>
+<div class="header">
+<h3>dos2unix</h3>
+</div>
 <p>用于把Windows的文件转换为类Unix系统的文件。用于转换文本文件。</p>
 <pre>
 $ dos2unix 要转换的文件
 </pre>
-<header>
-<h3 class="header">tidy</h3>
-</header>
+<div class="header">
+<h3>tidy</h3>
+</div>
 <p><a href=
 "https://github.com/htacg/tidy-html5">tidy</a>用于对HTML文件进行重排。</p>
 <pre>
 $ tidy 文件.html
 </pre>
-<header>
-<h2 class="header">搜索文件</h2>
-</header>
-<header>
-<h2 class="header">打印</h2>
-</header>
-<header>
-<h2 class="header">编译</h2>
-</header>
-<header>
-<h2 class="header">加密和解密</h2>
-</header>
-<header>
-<h3 class="header">aescrypt</h3>
-</header>
+<div class="header">
+<h2>搜索文件</h2>
+</div>
+<div class="header">
+<h2>打印</h2>
+</div>
+<div class="header">
+<h2>编译</h2>
+</div>
+<div class="header">
+<h2>加密和解密</h2>
+</div>
+<div class="header">
+<h3>aescrypt</h3>
+</div>
 <p>加密文件</p>
 <pre>
 $ aescrypt -e 要加密的文件
@@ -238,20 +238,20 @@ $ aescrypt -e 要加密的文件
 <pre>
 $ aescrypt -d 要解密的文件.aes
 </pre>
-<header>
-<h2 class="header">其它</h2>
-</header>
-<header>
-<h3 class="header">par2</h3>
-</header>
+<div class="header">
+<h2>其它</h2>
+</div>
+<div class="header">
+<h3>par2</h3>
+</div>
 <p>创建文件的恢复卷，用于恢复文件</p>
 <pre>
 $ par2 create -q -n1 -r5 文件
 </pre>
 <p>创建5%的单个恢复卷</p>
-<header>
-<h3 class="header">bc</h3>
-</header>
+<div class="header">
+<h3>bc</h3>
+</div>
 <p>用于简单数学计算。</p>
 <pre>
 $ bc -q
@@ -260,6 +260,8 @@ $ bc -q
 quit
 </pre></div>
 <!-- Vimwiki内容替换结束 -->
-<footer><small>© 2020 Mike的工作室; 更新于：2020-04-27</small></footer>
+<div id="footer">
+<p>© 2020 Mike的工作室； 更新于：2020-04-28</p>
+</div>
 </body>
 </html>
