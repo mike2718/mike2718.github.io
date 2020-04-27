@@ -1,4 +1,4 @@
 = 404 Not Found - 找不到文件 =
 %title Mike的个人网站
 
-点击返回[[/index|首页]]
+[[/index|返回首页]]

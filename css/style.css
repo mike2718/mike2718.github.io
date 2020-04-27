@@ -175,7 +175,6 @@ ul {
 }
 
 li {
-	color: Blue;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -204,30 +203,24 @@ h3 {
 
 h1 {
 	font-size: 2em;
-	color: #111111;
 }
 
 h2 {
 	font-size: 1.8em;
-	color: #404040;
 }
 
 h3 {
 	font-size: 1.6em;
-	color: #707070;
 }
 
 h4 {
 	font-size: 1.4em;
-	color: #909090;
 }
 
 h5 {
 	font-size: 1.3em;
-	color: #989898;
 }
 
 h6 {
 	font-size: 1.2em;
-	color: #9c9c9c;
 }

@@ -10,57 +10,44 @@
 <meta name="author" content="Mike Akiba">
 <meta name="viewport" content=
 "width=device-width, initial-scale=1.0">
-<meta name="renderer" content="webkit">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <script data-ad-client="ca-pub-5897293653782166" async src=
 "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
 <!-- Vimwiki内容替换开始 -->
 <div id="content">
-<div id="Linux命令行工具">
-<h1 id="Linux命令行工具" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7">Linux命令行工具</a></h1>
-</div>
-<div id="Linux命令行工具-系统">
-<h2 id="系统" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E7%B3%BB%E7%BB%9F">
-系统</a></h2>
-</div>
-<div id="Linux命令行工具-系统-ls">
-<h3 id="ls" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E7%B3%BB%E7%BB%9F-ls">
-ls</a></h3>
-</div>
+<header>
+<h1 class="header">Linux命令行工具</h1>
+</header>
+<header>
+<h2 class="header">系统</h2>
+</header>
+<header>
+<h3 class="header">ls</h3>
+</header>
 <p>ls用于列出文件</p>
 <pre>
 $ ls -lh 文件名
 </pre>
 <p>以KB、MB的格式列出文件大小</p>
-<div id="Linux命令行工具-系统-ln">
-<h3 id="ln" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E7%B3%BB%E7%BB%9F-ln">
-ln</a></h3>
-</div>
+<header>
+<h3 class="header">ln</h3>
+</header>
 <p>创建文件的链接</p>
 <pre>
 $ ln -sfT 源文件 链接文件
 </pre>
-<div id="Linux命令行工具-系统-rename">
-<h3 id="rename" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E7%B3%BB%E7%BB%9F-rename">
-rename</a></h3>
-</div>
+<header>
+<h3 class="header">rename</h3>
+</header>
 <p>重命名文件</p>
 <pre>
 $ rename -v 's/.html/.htm/g' *.html
 </pre>
 <p><code>-v</code> 显示详细信息，将所有扩展名为.html的文件重命名为.htm</p>
-<div id="Linux命令行工具-系统-du">
-<h3 id="du" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E7%B3%BB%E7%BB%9F-du">
-du</a></h3>
-</div>
+<header>
+<h3 class="header">du</h3>
+</header>
 <p>du用于显示文件占用的空间。</p>
 <p>显示一个目录的总大小，用</p>
 <pre>
@@ -70,21 +57,17 @@ $ ls -sh 目录
 <pre>
 $ ls -sch 目录1 目录2
 </pre>
-<div id="Linux命令行工具-系统-df">
-<h3 id="df" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E7%B3%BB%E7%BB%9F-df">
-df</a></h3>
-</div>
+<header>
+<h3 class="header">df</h3>
+</header>
 <p>计算磁盘剩余空间</p>
 <pre>
 $ df -h /dev/sda1
 </pre>
 <p><code>-h</code> 选项用于指定以KB、MB、GB的单位显示。</p>
-<div id="Linux命令行工具-系统-shutdown">
-<h3 id="shutdown" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E7%B3%BB%E7%BB%9F-shutdown">
-shutdown</a></h3>
-</div>
+<header>
+<h3 class="header">shutdown</h3>
+</header>
 <p>立即关机</p>
 <pre>
 $ shutdown -h now
@@ -93,22 +76,16 @@ $ shutdown -h now
 <pre>
 $ shutdown -r now
 </pre>
-<div id="Linux命令行工具-媒体">
-<h2 id="媒体" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%AA%92%E4%BD%93">
-媒体</a></h2>
-</div>
-<div id="Linux命令行工具-媒体-genisoimage">
-<h3 id="genisoimage" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%AA%92%E4%BD%93-genisoimage">
-genisoimage</a></h3>
-</div>
+<header>
+<h2 class="header">媒体</h2>
+</header>
+<header>
+<h3 class="header">genisoimage</h3>
+</header>
 <p>用于创建iso文件，以便刻录光盘。</p>
-<div id="Linux命令行工具-媒体-xorriso">
-<h3 id="xorriso" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%AA%92%E4%BD%93-xorriso">
-xorriso</a></h3>
-</div>
+<header>
+<h3 class="header">xorriso</h3>
+</header>
 <p>将iso文件刻录到光盘。</p>
 <p>刻录前，先取消挂载光盘。</p>
 <pre>
@@ -121,67 +98,49 @@ $ xorriso -as cdrecord -v dev=/dev/sr0 -speed=1 -dao 要刻录的文件.iso -eje
 <p><code>-as cdrecord</code> 指定使用cdrecord命令行选项，
 <code>-speed=1</code> 为一倍速刻录， <code>-dao</code> 为一次性写入，
 <code>-eject</code> 为刻录完成后弹出光盘。</p>
-<div id="Linux命令行工具-媒体-shred">
-<h3 id="shred" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%AA%92%E4%BD%93-shred">
-shred</a></h3>
-</div>
+<header>
+<h3 class="header">shred</h3>
+</header>
 <p>文件粉碎机</p>
 <pre>
 $ shred -uv 要粉碎的文件
 </pre>
 <p><code>-u</code> 为粉碎文件， <code>-v</code> 为输出详细信息。 也可以粉碎设备。</p>
-<div id="Linux命令行工具-图像">
-<h2 id="图像" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%9B%BE%E5%83%8F">
-图像</a></h2>
-</div>
-<div id="Linux命令行工具-图像-display">
-<h3 id="display" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%9B%BE%E5%83%8F-display">
-display</a></h3>
-</div>
-<div id="Linux命令行工具-图像-qrencode">
-<h3 id="qrencode" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%9B%BE%E5%83%8F-qrencode">
-qrencode</a></h3>
-</div>
+<header>
+<h2 class="header">图像</h2>
+</header>
+<header>
+<h3 class="header">display</h3>
+</header>
+<header>
+<h3 class="header">qrencode</h3>
+</header>
 <p><a href=
 "https://github.com/fukuchi/libqrencode">qrencode</a>用于创建二维码。</p>
 <pre>
 $ qrencode -d 300 -o hello.png "Hello, World"
 </pre>
 <p><code>-d</code> 为指定分辨率。</p>
-<div id="Linux命令行工具-网络">
-<h2 id="网络" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E7%BD%91%E7%BB%9C">
-网络</a></h2>
-</div>
-<div id="Linux命令行工具-网络-w3m">
-<h3 id="w3m" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E7%BD%91%E7%BB%9C-w3m">
-w3m</a></h3>
-</div>
+<header>
+<h2 class="header">网络</h2>
+</header>
+<header>
+<h3 class="header">w3m</h3>
+</header>
 <p>命令行网页浏览器。</p>
-<div id="Linux命令行工具-网络-whois">
-<h3 id="whois" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E7%BD%91%E7%BB%9C-whois">
-whois</a></h3>
-</div>
+<header>
+<h3 class="header">whois</h3>
+</header>
 <p>查询域名的whois信息。</p>
 <pre>
 $ whois example.com
 </pre>
-<div id="Linux命令行工具-归档和压缩">
-<h2 id="归档和压缩" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%BD%92%E6%A1%A3%E5%92%8C%E5%8E%8B%E7%BC%A9">
-归档和压缩</a></h2>
-</div>
-<div id="Linux命令行工具-归档和压缩-tar">
-<h3 id="tar" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%BD%92%E6%A1%A3%E5%92%8C%E5%8E%8B%E7%BC%A9-tar">
-tar</a></h3>
-</div>
+<header>
+<h2 class="header">归档和压缩</h2>
+</header>
+<header>
+<h3 class="header">tar</h3>
+</header>
 <p>创建 <code>.xz</code> 归档压缩文件</p>
 <pre>
 $ tar -Jcvf 压缩文件.tar.xz 文件或目录名
@@ -191,11 +150,9 @@ $ tar -Jcvf 压缩文件.tar.xz 文件或目录名
 $ tar -acvf 压缩文件.tar.gz 文件或目录名
 </pre>
 <p>因为给出了 <code>.gz</code> 的扩展名，自动使用gzip压缩</p>
-<div id="Linux命令行工具-归档和压缩-cpio">
-<h3 id="cpio" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%BD%92%E6%A1%A3%E5%92%8C%E5%8E%8B%E7%BC%A9-cpio">
-cpio</a></h3>
-</div>
+<header>
+<h3 class="header">cpio</h3>
+</header>
 <p>主要用于备份和打包文件。只能接受 <code>ls</code> 等命令和管道传递的文件名列表。</p>
 <p>将当前目录下的所有文件创建为一个名为 <code>归档文件.cpio</code> 的归档</p>
 <pre>
@@ -206,11 +163,9 @@ $ ls | cpio -ov &gt; 归档文件.cpio
 <pre>
 $ cpio -iv &lt; 归档文件.cpio
 </pre>
-<div id="Linux命令行工具-归档和压缩-lha">
-<h3 id="lha" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%BD%92%E6%A1%A3%E5%92%8C%E5%8E%8B%E7%BC%A9-lha">
-lha</a></h3>
-</div>
+<header>
+<h3 class="header">lha</h3>
+</header>
 <p><a href=
 "https://github.com/jca02266/lha[lha]%E4%B8%BADOS%E6%97%B6%E4%BB%A3%E5%9C%A8%E6%97%A5%E6%9C%AC%E5%B9%BF%E6%B3%9B%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8E%8B%E7%BC%A9%E6%A0%BC%E5%BC%8F%EF%BC%8C%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D%E4%B8%BA">
 https://github.com/jca02266/lha[lha]为DOS时代在日本广泛使用的压缩格式，文件扩展名为</a>
@@ -223,78 +178,58 @@ $ lha c 压缩文件.lzh 文件或目录名
 <pre>
 $ lha x 压缩文件.lzh
 </pre>
-<div id="Linux命令行工具-归档和压缩-upx">
-<h3 id="upx" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%BD%92%E6%A1%A3%E5%92%8C%E5%8E%8B%E7%BC%A9-upx">
-upx</a></h3>
-</div>
+<header>
+<h3 class="header">upx</h3>
+</header>
 <p>用于压缩可执行文件。可以对Windows的可执行文件和Linux的可执行文件进行压缩。</p>
 <pre>
 $ upx -f --best 可执行文件名
 </pre>
-<div id="Linux命令行工具-处理文本">
-<h2 id="处理文本" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%A4%84%E7%90%86%E6%96%87%E6%9C%AC">
-处理文本</a></h2>
-</div>
+<header>
+<h2 class="header">处理文本</h2>
+</header>
 <p><a href="https://github.com/martinwguy/xvi">xvi</a>是一个vi编辑器。
 可惜在中文Ubuntu系统上无法显示汉字。</p>
 <pre>
 $ xvi
 </pre>
-<div id="Linux命令行工具-处理文本-unix2dos">
-<h3 id="unix2dos" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%A4%84%E7%90%86%E6%96%87%E6%9C%AC-unix2dos">
-unix2dos</a></h3>
-</div>
+<header>
+<h3 class="header">unix2dos</h3>
+</header>
 <p>用于把类Unix系统的文件转换为Windows的文件。用于转换文本文件。</p>
 <pre>
 $ unix2dos 要转换的文件
 </pre>
-<div id="Linux命令行工具-处理文本-dos2unix">
-<h3 id="dos2unix" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%A4%84%E7%90%86%E6%96%87%E6%9C%AC-dos2unix">
-dos2unix</a></h3>
-</div>
+<header>
+<h3 class="header">dos2unix</h3>
+</header>
 <p>用于把Windows的文件转换为类Unix系统的文件。用于转换文本文件。</p>
 <pre>
 $ dos2unix 要转换的文件
 </pre>
-<div id="Linux命令行工具-处理文本-tidy">
-<h3 id="tidy" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%A4%84%E7%90%86%E6%96%87%E6%9C%AC-tidy">
-tidy</a></h3>
-</div>
+<header>
+<h3 class="header">tidy</h3>
+</header>
 <p><a href=
 "https://github.com/htacg/tidy-html5">tidy</a>用于对HTML文件进行重排。</p>
 <pre>
 $ tidy 文件.html
 </pre>
-<div id="Linux命令行工具-搜索文件">
-<h2 id="搜索文件" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E6%90%9C%E7%B4%A2%E6%96%87%E4%BB%B6">
-搜索文件</a></h2>
-</div>
-<div id="Linux命令行工具-打印">
-<h2 id="打印" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E6%89%93%E5%8D%B0">
-打印</a></h2>
-</div>
-<div id="Linux命令行工具-编译">
-<h2 id="编译" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E7%BC%96%E8%AF%91">
-编译</a></h2>
-</div>
-<div id="Linux命令行工具-加密和解密">
-<h2 id="加密和解密" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%8A%A0%E5%AF%86%E5%92%8C%E8%A7%A3%E5%AF%86">
-加密和解密</a></h2>
-</div>
-<div id="Linux命令行工具-加密和解密-aescrypt">
-<h3 id="aescrypt" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%8A%A0%E5%AF%86%E5%92%8C%E8%A7%A3%E5%AF%86-aescrypt">
-aescrypt</a></h3>
-</div>
+<header>
+<h2 class="header">搜索文件</h2>
+</header>
+<header>
+<h2 class="header">打印</h2>
+</header>
+<header>
+<h2 class="header">编译</h2>
+</header>
+<header>
+<h2 class="header">加密和解密</h2>
+</header>
+<header>
+<h3 class="header">aescrypt</h3>
+</header>
 <p>加密文件</p>
 <pre>
 $ aescrypt -e 要加密的文件
@@ -303,26 +238,20 @@ $ aescrypt -e 要加密的文件
 <pre>
 $ aescrypt -d 要解密的文件.aes
 </pre>
-<div id="Linux命令行工具-其它">
-<h2 id="其它" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%85%B6%E5%AE%83">
-其它</a></h2>
-</div>
-<div id="Linux命令行工具-其它-par2">
-<h3 id="par2" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%85%B6%E5%AE%83-par2">
-par2</a></h3>
-</div>
+<header>
+<h2 class="header">其它</h2>
+</header>
+<header>
+<h3 class="header">par2</h3>
+</header>
 <p>创建文件的恢复卷，用于恢复文件</p>
 <pre>
 $ par2 create -q -n1 -r5 文件
 </pre>
 <p>创建5%的单个恢复卷</p>
-<div id="Linux命令行工具-其它-bc">
-<h3 id="bc" class="header"><a href=
-"#Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-%E5%85%B6%E5%AE%83-bc">
-bc</a></h3>
-</div>
+<header>
+<h3 class="header">bc</h3>
+</header>
 <p>用于简单数学计算。</p>
 <pre>
 $ bc -q
@@ -331,6 +260,6 @@ $ bc -q
 quit
 </pre></div>
 <!-- Vimwiki内容替换结束 -->
-<footer><small>© 2020 Mike Akiba; 更新于: 2020-04-27</small></footer>
+<footer><small>© 2020 Mike的工作室; 更新于：2020-04-27</small></footer>
 </body>
 </html>
