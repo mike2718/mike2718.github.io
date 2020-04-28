@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>Mike的工作室</title>
+<meta charset="UTF-8">
+<meta name="description" content="Mike Akiba的个人网站">
+<meta name="author" content="Mike Akiba">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="Stylesheet" type="text/css" href="css/style.css">
+<script data-ad-client="ca-pub-5897293653782166" async src=
+"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+<!-- Vimwiki内容替换开始 -->
+<div id="content">
+
+<div class="header"><h1>Vimwiki语法</h1></div>
+
+<p>
+以下介绍Vimwiki的原生表达式语法。
+</p>
+
+<div class="header"><h2>文本格式化</h2></div>
+<table>
+<tr>
+<th>
+描述
+</th>
+<th>
+输入内容
+</th>
+<th>
+显示内容
+</th>
+</tr>
+<tr>
+<td>
+斜体文本
+</td>
+<td>
+<code>_italic text_</code> <code> _中文斜体_ </code>
+</td>
+<td>
+<em>italic text</em>  <em>中文斜体</em>
+</td>
+</tr>
+<tr>
+<td>
+粗体文本
+</td>
+<td>
+<code>*bold text*</code> <code> *中文粗体* </code>
+</td>
+<td>
+<span><strong>bold text</strong></span> <span><strong>中文粗体</strong></span>
+</td>
+</tr>
+<tr>
+<td>
+删除线
+</td>
+<td>
+<code>~~删除线~~</code>
+</td>
+<td>
+<del>删除线</del>
+</td>
+</tr>
+<tr>
+<td>
+代码
+</td>
+<td>
+`<code>code text</code>`
+</td>
+<td>
+<code>code text</code>
+</td>
+</tr>
+<tr>
+<td>
+上标
+</td>
+<td>
+<code>2^3^</code>
+</td>
+<td>
+2<sup><small>3</small></sup>
+</td>
+</tr>
+<tr>
+<td>
+下标
+</td>
+<td>
+<code>H,,2,,O</code>
+</td>
+<td>
+H<sub><small>2</small></sub>O
+</td>
+</tr>
+<tr>
+<td>
+注释
+</td>
+<td>
+<code>%%</code>(行首)
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+</table>
+
+<div class="header"><h2>链接</h2></div>
+<table>
+<tr>
+<th>
+描述
+</th>
+<th>
+输入内容
+</th>
+<th>
+显示内容
+</th>
+</tr>
+<tr>
+<td>
+链接
+</td>
+<td>
+<code>[[链接]]</code>
+</td>
+<td>
+<a href="链接.html">链接</a>
+</td>
+</tr>
+<tr>
+<td>
+带描述的链接
+</td>
+<td>
+<code>[[链接|描述]]</code>
+</td>
+<td>
+<a href="链接.html">描述</a>
+</td>
+</tr>
+<tr>
+<td>
+带子目录的链接
+</td>
+<td>
+<code>[[项目/重要项目之一]]</code>
+</td>
+<td>
+<a href="项目/重要项目之一.html">项目/重要项目之一</a>
+</td>
+</tr>
+<tr>
+<td>
+跳转到index文件的链接1
+</td>
+<td>
+<code>[[../index]]</code>
+</td>
+<td>
+<a href="../index.html">../index</a>
+</td>
+</tr>
+<tr>
+<td>
+跳转到index文件的链接2
+</td>
+<td>
+<code>[[/index]]</code>
+</td>
+<td>
+<a href="index.html">/index</a>
+</td>
+</tr>
+<tr>
+<td>
+跳转到子目录的链接
+</td>
+<td>
+<code>[[子目录/|其他文件]]</code>
+</td>
+<td>
+<a href="子目录/">其他文件</a>
+</td>
+</tr>
+<tr>
+<td>
+跳转到指定日记
+</td>
+<td>
+<code>[[diary:2012-03-05]]</code>
+</td>
+<td>
+<a href="diary/2012-03-05.html">diary:2012-03-05</a>
+</td>
+</tr>
+<tr>
+<td>
+跳转到指定锚记
+</td>
+<td>
+<code>[[待办事项#明天|明天的待办事项]]</code>
+</td>
+<td>
+<a href="待办事项.html#明天">明天的待办事项</a>
+</td>
+</tr>
+<tr>
+<td>
+跳转到当前页的指定锚记
+</td>
+<td>
+<code>[[#明天]]</code>
+</td>
+<td>
+<a href="Vimwiki语法.html#明天">#明天</a>
+</td>
+</tr>
+<tr>
+<td>
+https原始网址
+</td>
+<td>
+<code>https://github.com/vimwiki/vimwiki.git</code>
+</td>
+<td>
+<a href="https://github.com/vimwiki/vimwiki.git">https://github.com/vimwiki/vimwiki.git</a>
+</td>
+</tr>
+<tr>
+<td>
+电子邮件原始网址
+</td>
+<td>
+<code>mailto:habamax@gmail.com</code>
+</td>
+<td>
+<a href="mailto:habamax@gmail.com">mailto:habamax@gmail.com</a>
+</td>
+</tr>
+<tr>
+<td>
+ftp原始网址
+</td>
+<td>
+<code>ftp://vim.org</code>
+</td>
+<td>
+<a href="ftp://vim.org">ftp://vim.org</a>
+</td>
+</tr>
+<tr>
+<td>
+本地文件1
+</td>
+<td>
+<code>[[file:/home/somebody/a/b/c/music.mp3]]</code>
+</td>
+<td>
+<a href="/home/somebody/a/b/c/music.mp3">file:/home/somebody/a/b/c/music.mp3</a>
+</td>
+</tr>
+<tr>
+<td>
+本地文件2
+</td>
+<td>
+<code>[[file:C:/Users/somebody/d/e/f/music.mp3]]</code>
+</td>
+<td>
+<a href="/home/mike/dev2/mike2718.github.io/text/C:/Users/somebody/d/e/f/music.mp3">file:C:/Users/somebody/d/e/f/music.mp3</a>
+</td>
+</tr>
+<tr>
+<td>
+本地文件3
+</td>
+<td>
+<code>[[file:~/a/b/c/music.mp3]]</code>
+</td>
+<td>
+<a href="/home/mike/a/b/c/music.mp3">file:~/a/b/c/music.mp3</a>
+</td>
+</tr>
+<tr>
+<td>
+本地文件4
+</td>
+<td>
+<code>[[file:../assets/data.csv|重要数据]]</code>
+</td>
+<td>
+<a href="/home/mike/dev2/mike2718.github.io/assets/data.csv">重要数据</a>
+</td>
+</tr>
+<tr>
+<td>
+本地文件5
+</td>
+<td>
+<code>[[local:C:/Users/somebody/d/e/f/music.mp3]]</code>
+</td>
+<td>
+<a href="text/C:/Users/somebody/d/e/f/music.mp3">local:C:/Users/somebody/d/e/f/music.mp3</a>
+</td>
+</tr>
+<tr>
+<td>
+本地文件6
+</td>
+<td>
+<code>[[file:/home/user/documents/|我的文档]]</code>
+</td>
+<td>
+<a href="/home/user/documents/">我的文档</a>
+</td>
+</tr>
+</table>
+
+<div class="header"><h2>图像</h2></div>
+
+<div class="header"><h2>高亮文本</h2></div>
+<p>
+<span class="todo">TODO</span> xxx
+<span class="todo">DONE</span> xxx
+<span class="todo">STARTED</span> xxx
+<span class="todo">FIXME</span> xxx
+<span class="todo">FIXED</span> xxx
+<span class="todo">XXX</span> xxx
+将会成为高亮文本
+</p>
+
+<div class="header"><h2>标题</h2></div>
+<p>
+输入:
+</p>
+<pre>
+== 二级标题 ==
+=== 三级标题 ===
+==== 四级标题 ====
+===== 五级标题 =====
+====== 六级标题 ======
+</pre>
+<p>
+输出：
+</p>
+<div class="header"><h2>二级标题</h2></div>
+<div class="header"><h3>三级标题</h3></div>
+<div class="header"><h4>四级标题</h4></div>
+<div class="header"><h5>五级标题</h5></div>
+<div class="header"><h6>六级标题</h6></div>
+<div class="header"><h2>列表</h2></div>
+<div class="header"><h3>无序列表</h3></div>
+<p>
+输入：
+</p>
+<pre>
+- 项目
+- 项目
+- 项目
+</pre>
+<p>
+显示：
+</p>
+<ul>
+<li>
+项目
+
+<li>
+项目
+
+<li>
+项目
+
+</ul>
+<div class="header"><h3>有序列表</h3></div>
+<p>
+输入:
+</p>
+<pre>
+1. 项目1
+2. 项目2
+3. 项目3
+</pre>
+<p>
+显示：
+</p>
+<ol>
+<li>
+项目1
+
+<li>
+项目2
+
+<li>
+项目3
+
+</ol>
+
+<div class="header"><h2>表格</h2></div>
+<div class="header"><h3>简单表格</h3></div>
+<p>
+输入：
+</p>
+<pre>
+| a | b | c |
+|---|---|---|
+| d | e | f |
+</pre>
+<p>
+输出：
+</p>
+<table>
+<tr>
+<th>
+a
+</th>
+<th>
+b
+</th>
+<th>
+c
+</th>
+</tr>
+<tr>
+<td>
+d
+</td>
+<td>
+e
+</td>
+<td>
+f
+</td>
+</tr>
+</table>
+<div class="header"><h3>合并单元格</h3></div>
+<p>
+输入：
+</p>
+<pre>
+ | a  | b  | c | d |
+ | \/ | e  | &gt; | f |
+ | \/ | \/ | &gt; | g |
+ | h  | &gt;  | &gt; | &gt; |
+</pre>
+<p>
+显示：
+</p>
+<table class='center'>
+<tr>
+<td rowspan="3">
+a
+</td>
+<td>
+b
+</td>
+<td>
+c
+</td>
+<td>
+d
+</td>
+</tr>
+<tr>
+<td rowspan="2" colspan="2">
+e
+</td>
+<td>
+f
+</td>
+</tr>
+<tr>
+<td>
+g
+</td>
+</tr>
+<tr>
+<td colspan="4">
+h
+</td>
+</tr>
+</table>
+
+</div>
+<!-- Vimwiki内容替换结束 -->
+<!-- footer开始 -->
+<div id="footer">
+<p>© 2020 Mike的工作室； 更新于：2020-04-29</p>
+</div>
+<!-- footer结束 -->
+</body>
+</html>
