@@ -100,9 +100,9 @@ table {
 	display: block;
 	overflow: auto;
 	width: 100%;
-	margin-bottom: 16px;
-	border-spacing: 0;
+	margin: 1.5em 0 1.5em 0;
 	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 td {
@@ -184,7 +184,7 @@ h5,
 h6 {
 	font-weight: bold;
 	line-height:150%;
-	margin: 1.5em 0 1em 0;
+	margin: 1.5em 0 0.5em 0;
 }
 
 h1 {
