@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://muirmok.cn/sitemap.xml
-
+Sitemap: http://mikeakiba.cn/sitemap.xml
