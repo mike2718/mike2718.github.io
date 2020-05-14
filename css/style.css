@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "reset.css";
+
 body {
 	font: 400 16px/1.5 "Microsoft YaHei", "微软雅黑", sans-serif;
 	color: #111111;
@@ -169,7 +170,7 @@ ol {
 }
 
 li {
-	line-height: 180%;
+	line-height: 200%;
 }
 
 li+li {
