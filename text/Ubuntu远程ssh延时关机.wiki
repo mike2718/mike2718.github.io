@@ -1,0 +1,9 @@
+= Ubunt远程ssh延时关机（使用putty.exe） =
+
+使用putty.exe执行以下命令，即可1分钟后关闭Ubuntu。
+
+{{../images/linux/shutdown.jpg|在putty.exe上远程执行shutdown命令延时关机}}
+
+`+1` 为一分钟后关机。
+
+这样就可以在安全关闭远程连接后关机。
